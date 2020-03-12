@@ -14,15 +14,17 @@ for file in filenames:
     words = file.split(".")
     print(words)
     if words[1] == "hpp":
-        words.remove('hpp')
-        words.append('h')
-        newfilenames.append( tuple(words) )
+        temp_list = []
+        temp_list.append(words)
+        new_file = = words[0] + words[1]
+        temp_list.append(new_file)
+        newfilenames.append( tuple(temp_list) )
         print(newfilenames)
     else:
         new_list = []
         new_list.append(words)
         new_list.append(words)
-        newfilenames.append(new_list)
+        newfilenames.append( tuple(new_list) )
 
     print(words)
 
