@@ -6,11 +6,18 @@ function push_commit()
     git push
 }
 
+
+
 if [ "$1" == 'push' ]; then
     # call function
     push_commit
     exit 0
 
-
+if [ "$1" == 'run' ]; then
+    # push code
+    push_commit
+    # run Python script
+    python3 rename_file.py
+    exit 0
 
 fi
