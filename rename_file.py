@@ -15,7 +15,7 @@ for file in filenames:
     #print(words)
     if words[1] == "hpp":
         temp_list = []
-        temp_list.append(words)
+        temp_list.append(words[0])
         new_file = words[0] + words[1]
         temp_list.append(new_file)
         newfilenames.append( tuple(temp_list) )
