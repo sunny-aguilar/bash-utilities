@@ -10,9 +10,8 @@ def pig_latin(text):
     print(words)
     for word in words:
         # Create the pig latin word and add it to the list
-        temp_word = word[1:] + word[0]
+        temp_word = word[1:] + word[0] + "ay"
         print(temp_word)
-        print(temp_word + "ay")
         # Turn the list back into a phrase
         say += " " + temp_word
         print(say)
