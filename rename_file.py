@@ -54,10 +54,10 @@ def octal_to_string(octal):
                 result += '-'
     return result
 
-print(octal_to_string(755)) # Should be rwx r-x r-x
-print(octal_to_string(644)) # Should be rw- r-- r--
-print(octal_to_string(750)) # Should be rwx r-x ---
-print(octal_to_string(600)) # Should be rw- --- ---
+# print(octal_to_string(755)) # Should be rwx r-x r-x
+# print(octal_to_string(644)) # Should be rw- r-- r--
+# print(octal_to_string(750)) # Should be rwx r-x ---
+# print(octal_to_string(600)) # Should be rw- --- ---
 
 
 # Given a list of filenames, we want to rename all the files with the
