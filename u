@@ -13,7 +13,7 @@ if [ "$1" == 'push' ]; then
     push_commit
     exit 0
 
-if [ "$1" == 'run' ]; then
+elif [ "$1" == 'run' ]; then
     # push code
     push_commit
     # run Python script
