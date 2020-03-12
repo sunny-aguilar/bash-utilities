@@ -16,8 +16,8 @@ for file in filenames:
     if words[1] == "hpp":
         words.remove('hpp')
         words.append('h')
-        new_tuple = tuple(words)
-        print(new_tuple)
+        newfilenames.append( tuple(words) )
+        print(newfilenames)
 
     print(words)
 
