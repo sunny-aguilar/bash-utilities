@@ -26,9 +26,6 @@ for file in filenames:
         new_list.append(file)
         newfilenames.append( tuple(new_list) )
 
-    #print(words)
-
-
 print (newfilenames)
 # Should be [('program.c', 'program.c'), ('stdio.hpp', 'stdio.h'),
 # ('sample.hpp', 'sample.h'), ('a.out', 'a.out'), ('math.hpp', 'math.h'),
