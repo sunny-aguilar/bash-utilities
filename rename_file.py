@@ -27,7 +27,7 @@ def octal_to_string(octal):
                 result += 'r'       # added 'r'
                 x -= value
             else:
-                ___
+                result += 'x'
     return result
 
 print(octal_to_string(755)) # Should be rwx r-x r-x
