@@ -11,7 +11,7 @@
 filenames = ["program.c", "stdio.hpp", "sample.hpp", "a.out", "math.hpp", "hpp.out"]
 newfilenames = []
 for file in filenames:
-    words = file.rsplit(".")
+    words = file.split(".")
     print(words)
     if words[1] == "hpp":
         words.append('h')
