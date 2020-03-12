@@ -17,12 +17,12 @@ def octal_to_string(octal):
     value_letters = [(4,"r"),(2,"w"),(1,"x")]
     # Iterate over each of the digits in octal
     for x in [int(n) for n in str(octal)]:
-        print(x)
-        print(octal)
+        # print(x)                # 7
+        # print(octal)            # 755
         # Check for each of the permissions values
         for value, letter in value_letters:
-            print(value)
-            print(letter)
+            # print(value)        # 4
+            # print(letter)       # r
             if x >= value:          # added 'x'
                 result += 'r'       # added 'r'
                 x -= value
