@@ -16,7 +16,7 @@ for file in filenames:
     if words[1] == "hpp":
         words[1] == "h"
 
-    printf(words)
+    print(words)
 
 
 print (newfilenames)
