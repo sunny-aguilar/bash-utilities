@@ -13,6 +13,8 @@ def pig_latin(text):
         print(word + word[0])
         print(word + "ay")
         # Turn the list back into a phrase
+        say += " " + word
+        print(say)
         return words            # added words
 
 print(pig_latin("hello how are you"))
