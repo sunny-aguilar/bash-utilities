@@ -6,12 +6,13 @@
 def pig_latin(text):
     say = ""
     # Separate the text into words
-    words = ___
+    words = ' '.split(text)
+    print(words)
     for word in words:
         # Create the pig latin word and add it to the list
         ___
         # Turn the list back into a phrase
-        return ___
+        return words            # added words
 
 print(pig_latin("hello how are you"))
 # Should be "ellohay owhay reaay ouyay"
