@@ -5,6 +5,7 @@
 # the end. For example, python ends up as ythonpay.
 def pig_latin(text):
     say = ""
+    temp_list = []
     # Separate the text into words
     words = text.split()
     # print(words)
@@ -14,8 +15,8 @@ def pig_latin(text):
         # print(temp_word)
         # Turn the list back into a phrase
         say += temp_word + ' '
-    print(say)
-    return words            # added words
+        temp_list.append(say)
+    return ' '.join(word[0] for word in temp_list)            # added words
 
 print(pig_latin("hello how are you"))
 # Should be "ellohay owhay reaay ouyay"
