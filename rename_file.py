@@ -1,3 +1,24 @@
+# Author:           Sandro Aguilar
+def octal_to_string(octal):
+    result = ""
+    value_letters = [(4,"r"),(2,"w"),(1,"x")]
+    # Iterate over each of the digits in octal
+    for x in [int(n) for n in str(octal)]:
+        # Check for each of the permissions values
+        for value, letter in value_letters:
+            if ___ >= value:
+                result += ___
+                ___ -= value
+            else:
+                ___
+    return result
+
+print(octal_to_string(755)) # Should be rwxr-xr-x
+print(octal_to_string(644)) # Should be rw-r--r--
+print(octal_to_string(750)) # Should be rwxr-x---
+print(octal_to_string(600)) # Should be rw-------
+
+
 # Given a list of filenames, we want to rename all the files with the
 # extension hpp to the extension h by generating a list of tuples of
 # the form (old_name, new_name).
@@ -8,25 +29,25 @@
 # newfilenames = [('program.c', 'program.c'), ('stdio.hpp', 'stdio.h'),
 # ('sample.hpp', 'sample.h'), ('a.out', 'a.out'), ('math.hpp', 'math.h'), ('hpp.out', 'hpp.out')]
 
-filenames = ["program.c", "stdio.hpp", "sample.hpp", "a.out", "math.hpp", "hpp.out"]
-newfilenames = []
-for file in filenames:
-    words = file.split(".")
-    #print(words)
-    if words[1] == "hpp":
-        temp_list = []
-        temp_list.append(file)
-        new_file = words[0] + "." + "h"
-        temp_list.append(new_file)
-        newfilenames.append( tuple(temp_list) )
-        #print(newfilenames)
-    else:
-        new_list = []
-        new_list.append(file)
-        new_list.append(file)
-        newfilenames.append( tuple(new_list) )
+# filenames = ["program.c", "stdio.hpp", "sample.hpp", "a.out", "math.hpp", "hpp.out"]
+# newfilenames = []
+# for file in filenames:
+#     words = file.split(".")
+#     #print(words)
+#     if words[1] == "hpp":
+#         temp_list = []
+#         temp_list.append(file)
+#         new_file = words[0] + "." + "h"
+#         temp_list.append(new_file)
+#         newfilenames.append( tuple(temp_list) )
+#         #print(newfilenames)
+#     else:
+#         new_list = []
+#         new_list.append(file)
+#         new_list.append(file)
+#         newfilenames.append( tuple(new_list) )
 
-print (newfilenames)
+# print (newfilenames)
 # Should be [('program.c', 'program.c'), ('stdio.hpp', 'stdio.h'),
 # ('sample.hpp', 'sample.h'), ('a.out', 'a.out'), ('math.hpp', 'math.h'),
 # ('hpp.out', 'hpp.out')]
