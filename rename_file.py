@@ -11,7 +11,8 @@
 filenames = ["program.c", "stdio.hpp", "sample.hpp", "a.out", "math.hpp", "hpp.out"]
 newfilenames = []
 for file in filenames:
-    print(file.rsplit("."))
+    words = file.rsplit(".")
+    print(words)
 
 
 print (newfilenames)
