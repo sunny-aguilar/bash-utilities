@@ -17,7 +17,7 @@ def pig_latin(text):
         say += temp_word
         temp_list.append(say)
     # print(temp_list)
-    return [[' '.join(word)] for word in temp_list]          # added words
+    return [[''.join(word)] for word in temp_list]          # added words
 
 print(pig_latin("hello how are you"))
 # Should be "ellohay owhay reaay ouyay"
