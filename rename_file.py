@@ -8,7 +8,8 @@
 
 # complete the starter code to generate the following newfilenames list of tuples
 
-# newfilenames = [('program.c', 'program.c'), ('stdio.hpp', 'stdio.h'), ('sample.hpp', 'sample.h'), ('a.out', 'a.out'), ('math.hpp', 'math.h'), ('hpp.out', 'hpp.out')]
+# newfilenames = [('program.c', 'program.c'), ('stdio.hpp', 'stdio.h'),
+# ('sample.hpp', 'sample.h'), ('a.out', 'a.out'), ('math.hpp', 'math.h'), ('hpp.out', 'hpp.out')]
 
 
 
