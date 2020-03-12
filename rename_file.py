@@ -13,7 +13,13 @@ newfilenames = []
 for file in filenames:
     words = file.rsplit(".")
     print(words)
+    if words[1] == "hpp":
+        words[1] == "h"
+
+    printf(words)
 
 
 print (newfilenames)
-# Should be [('program.c', 'program.c'), ('stdio.hpp', 'stdio.h'), ('sample.hpp', 'sample.h'), ('a.out', 'a.out'), ('math.hpp', 'math.h'), ('hpp.out', 'hpp.out')]
+# Should be [('program.c', 'program.c'), ('stdio.hpp', 'stdio.h'),
+# ('sample.hpp', 'sample.h'), ('a.out', 'a.out'), ('math.hpp', 'math.h'),
+# ('hpp.out', 'hpp.out')]
