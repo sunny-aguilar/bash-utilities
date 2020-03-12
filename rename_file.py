@@ -21,6 +21,8 @@ def octal_to_string(octal):
         print(octal)
         # Check for each of the permissions values
         for value, letter in value_letters:
+            print(value)
+            print(letter)
             if ___ >= value:
                 result += ___
                 ___ -= value
