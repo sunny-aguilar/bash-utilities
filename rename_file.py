@@ -14,7 +14,7 @@ for file in filenames:
     words = file.rsplit(".")
     print(words)
     if words[1] == "hpp":
-        words[1] == "h"
+        words.append('h')
 
     print(words)
 
