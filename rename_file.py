@@ -16,7 +16,7 @@ def pig_latin(text):
         # Turn the list back into a phrase
         say += temp_word
         temp_list.append(say)
-        say = ' '.join(temp_list)
+        # say = ' '.join(temp_list)
     print(temp_list)
     return          # added words
 
