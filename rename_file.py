@@ -17,6 +17,8 @@ def octal_to_string(octal):
     value_letters = [(4,"r"),(2,"w"),(1,"x")]
     # Iterate over each of the digits in octal
     for x in [int(n) for n in str(octal)]:
+        print(x)
+        print(octal)
         # Check for each of the permissions values
         for value, letter in value_letters:
             if ___ >= value:
@@ -26,10 +28,10 @@ def octal_to_string(octal):
                 ___
     return result
 
-print(octal_to_string(755)) # Should be rwxr-xr-x
-print(octal_to_string(644)) # Should be rw-r--r--
-print(octal_to_string(750)) # Should be rwxr-x---
-print(octal_to_string(600)) # Should be rw-------
+print(octal_to_string(755)) # Should be rwx r-x r-x
+print(octal_to_string(644)) # Should be rw- r-- r--
+print(octal_to_string(750)) # Should be rwx r-x ---
+print(octal_to_string(600)) # Should be rw- --- ---
 
 
 # Given a list of filenames, we want to rename all the files with the
