@@ -12,7 +12,7 @@ def pig_latin(text):
         # Create the pig latin word and add it to the list
         temp_word = word[1:] + word[0]
         print(temp_word)
-        print(word + "ay")
+        print(temp_word + "ay")
         # Turn the list back into a phrase
         say += " " + word
         print(say)
