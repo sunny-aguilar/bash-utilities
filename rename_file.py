@@ -15,7 +15,7 @@ def pig_latin(text):
         # Turn the list back into a phrase
         say += " " + temp_word
         print(say)
-        return words            # added words
+    return words            # added words
 
 print(pig_latin("hello how are you"))
 # Should be "ellohay owhay reaay ouyay"
