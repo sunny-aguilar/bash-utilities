@@ -11,4 +11,6 @@ if [ "$1" == 'push' ]; then
     push_commit
     exit 0
 
+
+
 fi
