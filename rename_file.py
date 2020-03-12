@@ -23,8 +23,8 @@ def octal_to_string(octal):
         for value, letter in value_letters:
             print(value)
             print(letter)
-            if ___ >= value:
-                result += ___
+            if x >= value:
+                result += 'r'
                 ___ -= value
             else:
                 ___
