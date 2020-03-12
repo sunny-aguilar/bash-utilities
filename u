@@ -7,7 +7,7 @@ function push_commit()
 }
 
 
-
+# what to run
 if [ "$1" == 'push' ]; then
     # call function
     push_commit
