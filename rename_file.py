@@ -18,6 +18,11 @@ for file in filenames:
         words.append('h')
         newfilenames.append( tuple(words) )
         print(newfilenames)
+    else:
+        new_list = []
+        new_list.append(words)
+        new_list.append(words)
+        newfilenames.append(new_list)
 
     print(words)
 
