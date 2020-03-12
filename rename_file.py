@@ -12,14 +12,14 @@ filenames = ["program.c", "stdio.hpp", "sample.hpp", "a.out", "math.hpp", "hpp.o
 newfilenames = []
 for file in filenames:
     words = file.split(".")
-    print(words)
+    #print(words)
     if words[1] == "hpp":
         temp_list = []
         temp_list.append(words)
-        new_file = = words[0] + words[1]
+        new_file = words[0] + words[1]
         temp_list.append(new_file)
         newfilenames.append( tuple(temp_list) )
-        print(newfilenames)
+        #print(newfilenames)
     else:
         new_list = []
         new_list.append(words)
