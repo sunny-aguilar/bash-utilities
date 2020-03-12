@@ -25,7 +25,7 @@ def octal_to_string(octal):
             print(letter)
             if x >= value:          # added 'x'
                 result += 'r'       # added 'r'
-                ___ -= value
+                x -= value
             else:
                 ___
     return result
