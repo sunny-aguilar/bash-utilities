@@ -11,7 +11,7 @@
 filenames = ["program.c", "stdio.hpp", "sample.hpp", "a.out", "math.hpp", "hpp.out"]
 newfilenames = []
 for file in filenames:
-    
+    print(file[-3:-1])
 
 
 print (newfilenames)
