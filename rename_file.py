@@ -1,4 +1,6 @@
-# Given a list of filenames, we want to rename all the files with the extension hpp to the extension h by generating a list of tuples of the form (old_name, new_name).
+# Given a list of filenames, we want to rename all the files with the
+# extension hpp to the extension h by generating a list of tuples of
+# the form (old_name, new_name).
 
 # That is, given the following list of filenames
 
