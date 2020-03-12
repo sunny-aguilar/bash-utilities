@@ -26,7 +26,7 @@ for file in filenames:
         new_list.append(words)
         newfilenames.append( tuple(new_list) )
 
-    print(words)
+    #print(words)
 
 
 print (newfilenames)
