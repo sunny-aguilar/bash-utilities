@@ -14,10 +14,10 @@ if [ "$1" == 'push' ]; then
     exit 0
 
 elif [ "$1" == 'run' ]; then
-    # run Python script
-    python3 rename_file.py
     # push code
     push_commit
+    # run Python script
+    python3 rename_file.py
     exit 0
 
 fi
