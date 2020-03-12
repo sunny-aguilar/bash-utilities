@@ -22,8 +22,8 @@ for file in filenames:
         #print(newfilenames)
     else:
         new_list = []
-        new_list.append(words)
-        new_list.append(words)
+        new_list.append(file)
+        new_list.append(file)
         newfilenames.append( tuple(new_list) )
 
     #print(words)
