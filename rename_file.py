@@ -9,6 +9,7 @@ def email_list(domains):
     for key in domains:
         print(key)
         for user in users:
+            print(user)
             emails.___
     return(emails)
 
