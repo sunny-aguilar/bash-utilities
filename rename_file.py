@@ -8,9 +8,9 @@ def email_list(domains):
     emails = []
     for key in domains:
         print(key)
-        for user in users:
-            print(user)
-            emails.___
+        # for user in users:
+        #     print(user)
+        #     emails.___
     return(emails)
 
 print(email_list({"gmail.com": ["clark.kent", "diana.prince", "peter.parker"], "yahoo.com": ["barbara.gordon", "jean.grey"], "hotmail.com": ["bruce.wayne"]}))
