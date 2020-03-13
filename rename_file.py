@@ -33,9 +33,9 @@ def pig_latin(text):
         say = ' '.join(temp_list)
     return say          # added words
 
-print(pig_latin("hello how are you"))
+# print(pig_latin("hello how are you"))
 # Should be "ellohay owhay reaay ouyay"
-print(pig_latin("programming in python is fun"))
+# print(pig_latin("programming in python is fun"))
 # Should be "rogrammingpay niay ythonpay siay unfay"
 
 
