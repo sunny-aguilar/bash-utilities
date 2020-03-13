@@ -12,7 +12,7 @@ def groups_per_user(group_dictionary):
             # Now add the group to the the list of
             print(user)
             print(names)
-            # lst = []
+            lst = []
             user_groups[user] = [].append(names)
     # groups for this user, creating the entry
     # in the dictionary if necessary
