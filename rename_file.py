@@ -4,8 +4,8 @@
 # with the list of users. Users can belong to multiple groups. Fill in the blanks
 # to return a dictionary with the users as keys and a list of their groups as values.
 def groups_per_user(group_dictionary):
-	user_groups = {}
-	# Go through group_dictionary
+    user_groups = {}
+    # Go through group_dictionary
     for names, users in group_dictionary.items():
         # Now go through the users in the group
         for user in users:
