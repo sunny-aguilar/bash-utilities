@@ -8,6 +8,7 @@ def email_list(domains):
     emails = []
     for key, users in domains:
         print(key)
+        print(users)
         for user in users:
             print(user)
             emails.___
