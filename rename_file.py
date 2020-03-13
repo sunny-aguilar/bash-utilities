@@ -10,6 +10,7 @@ def groups_per_user(group_dictionary):
         # Now go through the users in the group
         for ___:
             # Now add the group to the the list of
+
 # groups for this user, creating the entry
 # in the dictionary if necessary
 
@@ -18,9 +19,6 @@ def groups_per_user(group_dictionary):
 print(groups_per_user({"local": ["admin", "userA"],
 		"public":  ["admin", "userB"],
 		"administrator": ["admin"] }))
-
-
-
 
 
 
