@@ -8,12 +8,12 @@ def groups_per_user(group_dictionary):
     # Go through group_dictionary
     for names, users in group_dictionary.items():
         # Now go through the users in the group
+        user_groups[user] = []
         for user in users:
             # Now add the group to the the list of
             print(user)
             print(names)
             # lst = []
-            user_groups[user] = []
             user_groups[user].append(names)
     # groups for this user, creating the entry
     # in the dictionary if necessary
