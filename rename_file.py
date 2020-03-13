@@ -17,11 +17,6 @@ print(email_list({"gmail.com": ["clark.kent", "diana.prince", "peter.parker"], "
 
 
 
-
-
-
-
-
 # Let's create a function that turns text into pig latin: a simple text transformation
 # that modifies each word moving the first character to the end and appending "ay" to
 # the end. For example, python ends up as ythonpay.
