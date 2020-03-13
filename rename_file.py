@@ -6,7 +6,8 @@
 # generate a list that contains complete email addresses (e.g. diana.prince@gmail.com).
 def email_list(domains):
 	emails = []
-    for ___:
+    for key in domains:
+        print(key)
         for user in users:
         emails.___
 	return(emails)
