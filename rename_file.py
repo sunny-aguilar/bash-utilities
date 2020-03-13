@@ -6,11 +6,11 @@
 def groups_per_user(group_dictionary):
 	user_groups = {}
 	# Go through group_dictionary
-    for ___:
+    for names, users in group_dictionary.items():
         # Now go through the users in the group
-        for ___:
+        for user in users:
             # Now add the group to the the list of
-
+            print(user)
 # groups for this user, creating the entry
 # in the dictionary if necessary
 
