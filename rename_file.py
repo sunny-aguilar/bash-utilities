@@ -7,9 +7,8 @@
 def email_list(domains):
     emails = []
     for names, users in domains.items():
-        print(names)
         for user in users:
-            print(user)
+            emails.append(user+"@"+names)
         #     emails.___
     return(emails)
 
