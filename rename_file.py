@@ -1,5 +1,27 @@
 # Author:           Sandro Aguilar
 
+
+#The email_list function receives a dictionary, which contains domain names as keys, and a list of users as values. Fill in the blanks to generate a list that contains complete email addresses (e.g. diana.prince@gmail.com).
+
+
+
+
+def email_list(domains):
+	emails = []
+	for ___:
+	  for user in users:
+	    emails.___
+	return(emails)
+
+print(email_list({"gmail.com": ["clark.kent", "diana.prince", "peter.parker"], "yahoo.com": ["barbara.gordon", "jean.grey"], "hotmail.com": ["bruce.wayne"]}))
+
+
+
+
+
+
+
+
 # Let's create a function that turns text into pig latin: a simple text transformation
 # that modifies each word moving the first character to the end and appending "ay" to
 # the end. For example, python ends up as ythonpay.
@@ -8,17 +30,13 @@ def pig_latin(text):
     temp_list = []
     # Separate the text into words
     words = text.split()
-    # print(words)
     for word in words:
         # Create the pig latin word and add it to the list
         temp_word = word[1:] + word[0] + "ay"
-        # print(temp_word)
         # Turn the list back into a phrase
         temp_list.append(temp_word)
-        # say += temp_word
         say = ' '.join(temp_list)
-    print(say)
-    return          # added words
+    return say          # added words
 
 print(pig_latin("hello how are you"))
 # Should be "ellohay owhay reaay ouyay"
