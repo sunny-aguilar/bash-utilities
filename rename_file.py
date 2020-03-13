@@ -10,10 +10,8 @@ def groups_per_user(group_dictionary):
         # Now go through the users in the group
         for user in users:
             # Now add the group to the the list of
-            print(user)
-            print(names)
-            # lst = []
-            user_groups[user] = [names]
+            if user not in user_groups:
+                user_groups[user] = []
             user_groups[user].append(names)
     # Now add the group to the the list of
     # groups for this user, creating the entry
