@@ -1,7 +1,18 @@
 # Author:           Sandro Aguilar
 
+# classes
+class Dogs:
+    def __init__(self, name):
+        name = name
 
-dir("")
+    def say_name(self):
+        print("My name is {}".format(self.name))
+
+lab = Dogs("Max")
+lab.say_name
+
+
+
 
 
 def car_listing(car_prices):
