@@ -3,7 +3,7 @@
 def format_address(address_string):
     # Declare variables
     house_number = ''
-    stree_name = ''
+    street_name = ''
     # Separate the address string into parts
     spi = address_string.split()
     # Traverse through the address parts
