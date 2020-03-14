@@ -4,8 +4,8 @@ import psutil
 
 txt1 = 'Free disk space is {}'
 txt2 = 'CPU usage is {}'
-free = 0
-usage = 0
+# free = 0
+# usage = 0
 
 def check_disk_usage(disk):
     du = shutil.disk_usage(disk)
