@@ -18,7 +18,7 @@ def check_disk_usage(disk):
 def check_cpu_usage():
     global usage
     usage = psutil.cpu_percent(1)
-    txt = 'CPU usage is {}'
+    txt = 'CPU usage is {}%'
     print(txt.format(usage))
     return usage < 75
 
