@@ -2,6 +2,8 @@
 import shutil
 import psutil
 
+txt1 = ''
+txt2 = ''
 
 def check_disk_usage(disk):
     du = shutil.disk_usage(disk)
