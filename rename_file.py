@@ -17,7 +17,6 @@ def current_users(events):
         # print(event.user)
         if event.machine not in machines:
             machines[event.machine] = set()
-            print(set())
         if event.type == "login":
             machines[event.machine].add(event.user)
         elif event.type == "logout":
@@ -39,7 +38,7 @@ events = [
     Event('2020-01-21 18:53:21', 'login', 'webserver.local', 'lane'),
     Event('2020-01-22 10:25:34', 'logout', 'myworkstation.local', 'jordan'),
     Event('2020-01-21 08:20:01', 'login', 'webserver.local', 'jordan'),
-    Event('2020-01-23 11:24:35', 'logout', 'mailserver.local', 'chris'),
+    # Event('2020-01-23 11:24:35', 'logout', 'mailserver.local', 'chris'),
 ]
 
 users = current_users(events)
