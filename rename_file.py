@@ -8,7 +8,7 @@ class Dogs:
         self.name = name
 
     def say_name(self):
-        print("My name is " + self.name)
+        print("My name is {}".format(self.name))
 
 lab = Dogs("Max")
 lab.say_name()
