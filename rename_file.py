@@ -2,6 +2,8 @@
 
 # classes
 class Dogs:
+    name = ""
+
     def __init__(self, name):
         name = name
 
