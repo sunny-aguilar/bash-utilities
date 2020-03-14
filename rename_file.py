@@ -5,7 +5,7 @@ def format_address(address_string):
     house_number = ''
     stree_name = ''
     # Separate the address string into parts
-
+    spi = address_string.split()
     # Traverse through the address parts
     for __:
     # Determine if the address part is the
