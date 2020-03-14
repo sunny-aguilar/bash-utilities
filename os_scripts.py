@@ -16,6 +16,7 @@ def check_disk_usage(disk):
 def check_cpu_usage():
     global usage
     usage = psutil.cpu_percent(1)
+    print(usage)
     return usage < 75
 
 
