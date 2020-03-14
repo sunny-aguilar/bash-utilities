@@ -14,15 +14,15 @@ def current_users(events):
     events.sort(key=get_event_date)
     machines = {}
     for event in events:
-    if event.machine not in machines:
-        machines[event.machine] = set()
-    if event.type == "login":
-        machines[event.machine].add(event.user)
-    elif event.type == "logout":
-        if event.type == "login" and event.user not in machines:
+        if event.machine not in machines:
+            machines[event.machine] = set()
+        if event.type == "login":
             machines[event.machine].add(event.user)
-        else:
-            machines[event.machine].remove(event.user)
+        elif event.type == "logout":
+            if event.type == "login" and event.user not in machines:
+                machines[event.machine].add(event.user)
+            else:
+                machines[event.machine].remove(event.user)
     return machines
 
 def generate_report(machines):
