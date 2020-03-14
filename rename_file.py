@@ -40,7 +40,8 @@ events = [
     Event('2020-01-23 11:24:35', 'logout', 'mailserver.local', 'chris'),
 ]
 
-
+users = current_users(events)
+print(users)
 
 
 
