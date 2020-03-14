@@ -7,10 +7,14 @@ def format_address(address_string):
     # Separate the address string into parts
     spi = address_string.split()
     # Traverse through the address parts
-    for __:
+    for ele in spi:
     # Determine if the address part is the
     # house number or part of the street name
-
+        if ele.isdigit():
+            house_number = ele
+        else:
+            street_name += ele
+        street_name += ' '
     # Does anything else need to be done
     # before returning the result?
 
