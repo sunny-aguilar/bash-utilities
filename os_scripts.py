@@ -16,7 +16,7 @@ def check_cpu_usage():
     print(txt)
     return usage < 75
 
-if not check_disk_usage("/") or not check_cpu_usage:
+if not check_disk_usage("/") and not check_cpu_usage:
     print("ERROR!")
 else:
     print("Everything is ok!")
