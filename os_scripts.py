@@ -2,8 +2,8 @@
 import shutil
 import psutil
 
-txt1 = ''
-txt2 = ''
+txt1 = 'Free disk space is {}'
+txt2 = 'CPU usage is {}'
 free = 0
 usage = 0
 
@@ -16,7 +16,6 @@ def check_disk_usage(disk):
 def check_cpu_usage():
     usage = psutil.cpu_percent(1)
     txt2 = "CPU usage is {}".format(usage)
-    print(txt)
     return usage < 75
 
 
