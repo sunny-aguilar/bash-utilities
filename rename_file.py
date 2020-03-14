@@ -21,7 +21,8 @@ def current_users(events):
             machines[event.machine].add(event.user)
         elif event.type == "logout":
             print(event.user)
-            if event.type == "login" and event.user not in machines[event.machine]:
+            if event.user not in machines[event.machine]:
+                print("REACHED")
                 machines[event.machine].add(event.user)
             else:
                 machines[event.machine].remove(event.user)
