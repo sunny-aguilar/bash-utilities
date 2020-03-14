@@ -14,7 +14,7 @@ def current_users(events):
     events.sort(key=get_event_date)
     machines = {}
     for event in events:
-        print(event)
+        print(event.user)
         if event.machine not in machines:
             machines[event.machine] = set()
         if event.type == "login":
