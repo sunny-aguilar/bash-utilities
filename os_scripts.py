@@ -24,4 +24,4 @@ if not check_disk_usage("/") or not check_cpu_usage:
 else:
     print("Everything is ok!")
     print(txt1.format(free))
-    print(txt2)
+    print(txt2.format(usage))
