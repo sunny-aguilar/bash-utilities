@@ -5,7 +5,7 @@ class Event:
         self.date = event_date
         self.type = event_type
         self.machine = machine_name
-    self.user = user
+        self.user = user
 
 def get_event_date(event):
     return event.date
