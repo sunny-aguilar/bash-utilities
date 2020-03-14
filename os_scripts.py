@@ -4,6 +4,8 @@ import psutil
 
 txt1 = ''
 txt2 = ''
+free = 0
+usage = 0
 
 def check_disk_usage(disk):
     du = shutil.disk_usage(disk)
