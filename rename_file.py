@@ -19,7 +19,7 @@ def format_address(address_string):
     # before returning the result?
 
     # Return the formatted string
-    return "house number {} on street named {}".format(__)
+    return "house number {} on street named {}".format(house_number, street_name)
 
 print(format_address("123 Main Street"))
 # Should print: "house number 123 on street named Main Street"
