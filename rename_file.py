@@ -11,7 +11,7 @@ class Dogs:
         print("My name is {}".format(self.name))
 
 lab = Dogs("Max")
-lab.say_name
+lab.say_name()
 
 
 
