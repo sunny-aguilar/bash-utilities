@@ -3,11 +3,15 @@
 
 
 
-animal = "Hippopotamus"
-print(animal[3:6])
-print(animal[-5])
-print(animal[10:])
+colors = ["red", "white", "blue"]
+colors.insert(2, "yellow")
+print(colors)
 
+
+animal = "Hippopotamus"
+# print(animal[3:6])
+# print(animal[-5])
+# print(animal[10:])
 
 
 def highlight_word(sentence, word):
@@ -15,7 +19,6 @@ def highlight_word(sentence, word):
 
 # print(highlight_word("Have a nice day", "nice"))
 # print(highlight_word("Shhh, don't be so loud!", "loud"))
-
 # print(highlight_word("Automating with Python is fun", "fun"))
 
 
