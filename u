@@ -1,4 +1,8 @@
 #!/bin/bash
+# this bash script helps in running various common tasks such as pushing the repo
+# to github and running the script on the command line. Some commands are combined
+# for greater efficiency.
+
 
 function push_commit()
 {
