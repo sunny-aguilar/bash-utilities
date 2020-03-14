@@ -24,6 +24,7 @@ def current_users(events):
                 machines[event.machine].add(event.user)
             else:
                 machines[event.machine].remove(event.user)
+    print(machines)
     return machines
 
 def generate_report(machines):
