@@ -5,7 +5,7 @@ class Dogs:
     # name = ""
 
     def __init__(self, name):
-        name = name
+        self.name = name
 
     def say_name(self):
         print("My name is " + self.name)
