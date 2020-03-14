@@ -1,5 +1,22 @@
 # Author:           Sandro Aguilar
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 class Event:
     def __init__(self, event_date, event_type, machine_name, user):
         self.date = event_date
@@ -20,9 +37,9 @@ def current_users(events):
         if event.type == "login":
             machines[event.machine].add(event.user)
         elif event.type == "logout":
-            print(event.user)
+            # print(event.user)
             if event.user not in machines[event.machine]:
-                print("REACHED")
+                # print("REACHED")
                 machines[event.machine].add(event.user)
             else:
                 machines[event.machine].remove(event.user)
@@ -45,7 +62,7 @@ events = [
 ]
 
 users = current_users(events)
-print(users)
+# print(users)
 
 
 
