@@ -20,9 +20,9 @@ def current_users(events):
         if event.type == "login":
             machines[event.machine].add(event.user)
             print(machines[event.machine])
-            print(event.user)
         elif event.type == "logout":
             if event.type == "login" and event.user not in machines[event.machine]:
+                print(event.user)
                 machines[event.machine].add(event.user)
             else:
                 machines[event.machine].remove(event.user)
