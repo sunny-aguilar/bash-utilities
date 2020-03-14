@@ -2,7 +2,7 @@
 
 # classes
 class Dogs:
-    name = ""
+    # name = ""
 
     def __init__(self, name):
         name = name
