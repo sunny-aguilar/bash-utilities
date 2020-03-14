@@ -9,6 +9,7 @@ def check_disk_usage(disk):
 
 def check_cpu_usage():
     usage = psutil.cpu_percent(1):
+    print(usage)
     return usage < 75
 
 if not check_disk_usage("/") or not check_cpu_usage:
