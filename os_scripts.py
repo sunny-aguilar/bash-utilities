@@ -6,6 +6,8 @@ import psutil
 def check_disk_usage(disk):
     du = shutil.disk_usage(disk)
     free = du.free / du.total * 100
+    txt = "Free disk space is {}".format(free)
+    
     return free > 20
 
 def check_cpu_usage():
