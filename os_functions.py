@@ -23,7 +23,7 @@ print(os.listdir('../bash-utilities'))
 # check file types
 dir = '../bash-utilities'
 for name in os.listdir(dir):
-    fullname = os.path.isdir(dir, name)
+    fullname = os.path.join(dir, name)
     if os.path.isdir(fullname):
         print('{} is a directory'.format(fullname))
     else:
