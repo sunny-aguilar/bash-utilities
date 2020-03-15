@@ -13,8 +13,6 @@ function push_commit()
     git push
 }
 
-echo "arg1 $1  arg2 $2  arg3 $3"
-
 
 # what to run
 if [ "$1" == 'push' ]; then
