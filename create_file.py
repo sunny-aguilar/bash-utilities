@@ -2,13 +2,17 @@
 import sys              # access command line args
 import os
 
-def create_python_script(filename):
+def create_python_script():
     comments = '################################################\n'\
                 '# Author:          Sandro Aguilar\n'\
                 '################################################'
 
-    with open
+    with open(sys.argv[1]) as file:
+        file.write(comments)
+
+# call function
+create_python_script()
 
 
-print('Num of args:', len(sys.argv), 'arguments.')
-print('Arg list:', str(sys.argv))
+# print('Num of args:', len(sys.argv), 'arguments.')
+# print('Arg list:', str(sys.argv))
