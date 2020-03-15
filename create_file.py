@@ -9,7 +9,7 @@ def create_python_script():
 
     print(sys.argv[1])
 
-    with open(sys.argv[1]) as file:
+    with open(sys.argv[1], 'w+') as file:
         file.write(comments)
 
 # call function
