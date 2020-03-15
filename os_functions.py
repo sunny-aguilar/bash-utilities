@@ -9,3 +9,4 @@ txt = "File size: {}"
 print(txt.format(os.path.getsize('text_file')))
 
 
+
