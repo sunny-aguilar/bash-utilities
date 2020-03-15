@@ -1,5 +1,5 @@
 #!/usr/bin/python3
 import os
 
-print(getcwd())
+print(os.getcwd())
 
