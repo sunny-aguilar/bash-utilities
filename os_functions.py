@@ -24,6 +24,7 @@ print(os.listdir('../bash-utilities'))
 dir = '../bash-utilities'
 for name in os.listdir(dir):
     fullname = os.path.join(dir, name)
+    print(fullname)
     if os.path.isdir(fullname):
         print('{} is a directory'.format(fullname))
     else:
