@@ -11,3 +11,5 @@ print(txt.format(os.path.getsize('text_file')))
 timestamp = os.path.getmtime("text_file")
 datetime.datetime.fromtimestamp(timestamp)
 print(datetime.datetime(2020, 1, 6, 7, 2, 3, 899999))
+
+print(os.path.exists('text_file'))
