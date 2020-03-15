@@ -7,6 +7,8 @@ def create_python_script():
                 '# Author:          Sandro Aguilar\n'\
                 '################################################'
 
+    print(sys.argv[1])
+
     with open(sys.argv[1]) as file:
         file.write(comments)
 
