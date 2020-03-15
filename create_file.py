@@ -7,3 +7,4 @@ import os
 
 
 print('Num of args:', len(sys.argv), 'arguments.')
+print('Arg list:', str(sys.argv))
