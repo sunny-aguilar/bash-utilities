@@ -4,5 +4,5 @@ import os
 txt = "Current working dir: {}"
 print(txt.format(os.getcwd()))
 
-
-print(os.path.getsize('text_file'))
+txt = "File size: {}"
+print(txt.format(os.path.getsize('text_file')))
