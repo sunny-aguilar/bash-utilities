@@ -18,5 +18,5 @@ print(os.path.exists('text_file'))
 # os.chdir('new_dir')
 # os.rmdir('new_dir')
 
-print(os.listdir('./bash-utilities'))
+print(os.listdir('/bash-utilities'))
 
