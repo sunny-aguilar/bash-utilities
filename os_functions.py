@@ -10,4 +10,4 @@ print(txt.format(os.path.getsize('text_file')))
 
 timestamp = os.path.getmtime("text_file")
 datetime.datetime.fromtimestamp(timestamp)
-datetime.datetime(2020, 1, 6, 7, 2, 3 899999)
+datetime.datetime(2020, 1, 6, 7, 2, 3, 899999)
