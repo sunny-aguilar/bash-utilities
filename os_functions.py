@@ -3,4 +3,4 @@ import os
 
 
 print(os.getcwd())
-
+print(os.path.getsize('text_file'))
