@@ -3,13 +3,13 @@ import sys              # access command line args
 import os
 
 def create_python_script():
-    comments = '##########################################################\n'\
+    comments = '###############################################################\n'\
                 '# Author:              Sandro Aguilar\n'\
-                '# Date:                Month day, 2020'\
-                '# Class:               CS XXX'\
-                '# Description:         Enter description here'\
-                '#'\
-                '##########################################################'
+                '# Date:                Month day, 2020\n'\
+                '# Class:               CS XXX\n'\
+                '# Description:         Enter description here\n'\
+                '#                      \n'\
+                '###############################################################'
 
     print(sys.argv[1])
 
