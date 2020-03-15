@@ -16,4 +16,4 @@ print(os.path.exists('text_file'))
 
 # os.mkdir('new_dir')
 # os.chdir('new_dir')
-os.rmdir('new_dir')
+os.rmdir('new_dir2')
