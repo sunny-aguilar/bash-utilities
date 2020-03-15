@@ -8,7 +8,7 @@ def create_python_script():
                 '# Date:                Month day, 2020'\
                 '# Class:               CS XXX'\
                 '# Description:         Enter description here'\
-                '#                      '\
+                '#'\
                 '##########################################################'
 
     print(sys.argv[1])
