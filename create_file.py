@@ -9,6 +9,8 @@ def create_python_script():
                 '# Class:               CS XXX\n'\
                 '# Description:         Enter description here\n'\
                 '#                      \n'\
+                '#                      \n'\
+                '#                      \n'\
                 '####################################################################\n'
 
 
