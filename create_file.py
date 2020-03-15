@@ -9,9 +9,9 @@ def create_python_script():
                 '# Class:               CS XXX\n'\
                 '# Description:         Enter description here\n'\
                 '#                      \n'\
-                '####################################################################'
+                '####################################################################\n'
 
-    print(sys.argv[1])
+
 
     with open(sys.argv[1], 'w+') as file:
         file.write(comments)
