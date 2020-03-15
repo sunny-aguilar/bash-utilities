@@ -6,4 +6,4 @@ import os
 #def create_python_script(filename):
 
 
-print('Num of args:', len(sys.argv), ' arguments.')
+print('Num of args:', len(sys.argv), 'arguments.')
