@@ -6,7 +6,7 @@
 # Description:          Using Python to interact with the Operating
 #                       system. This program uses the CSV module to
 #                       perform various operations on CSV files
-#                      such as printing.
+#                       such as printing.
 ####################################################################
 import csv
 
@@ -18,3 +18,8 @@ for row in csv_f:
     print("Name: {}, Phone: {}, Role: {}".format(name, phone, role))
 
 f.close()
+
+# store data into a csv file
+hosts = [["workstation.local", "192.165.25.46"], ["webserver.cloud", "10.2.5.6"]]
+
+
