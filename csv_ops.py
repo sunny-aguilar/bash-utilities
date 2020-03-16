@@ -1,12 +1,12 @@
 #!/usr/bin/python3
 ####################################################################
-# Author:              Sandro Aguilar
-# Date:                Month day, 2020
-# Class:               CS XXX
-# Description:         Enter description here
-#                      
-#                      
-#                      
+# Author:               Sandro Aguilar
+# Date:                 Month day, 2020
+# Class:                Coursera
+# Description:          Using Python to interact with the Operating
+#                       system. This program uses the CSV module to
+#                       perform various operations on CSV files
+#                      such as printing.
 ####################################################################
 import csv
 
