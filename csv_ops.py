@@ -24,7 +24,7 @@ hosts = [["workstation.local", "192.165.25.46"], ["webserver.cloud", "10.2.5.6"]
 
 with open('csv_file.csv', 'w') as hosts_csv:
     writer = csv.writer(hosts_csv)
-
+    writer.writerows(hosts)
 
 
 
