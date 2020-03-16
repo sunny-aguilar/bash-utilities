@@ -10,6 +10,7 @@
 ####################################################################
 import csv
 
-f = open('csv_file.txt')
+f = open('csv_file.csv')
 csv_f = csv.reader(f)
 
+for
