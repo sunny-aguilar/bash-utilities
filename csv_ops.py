@@ -26,5 +26,6 @@ import csv
 #     writer = csv.writer(hosts_csv)
 #     writer.writerows(hosts)
 
-
-
+# dicreader to process CSV files with header row
+with open('csv_file.csv') as software:
+    reader = csv.DictReader(software)
