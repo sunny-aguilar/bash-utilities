@@ -13,4 +13,6 @@ import csv
 f = open('csv_file.csv')
 csv_f = csv.reader(f)
 
-for
+for row in csv_f:
+    name, phone, role = row
+    
