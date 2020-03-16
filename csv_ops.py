@@ -10,14 +10,14 @@
 ####################################################################
 import csv
 
-f = open('csv_file.csv')
-csv_f = csv.reader(f)
+# f = open('csv_file.csv')
+# csv_f = csv.reader(f)
 
-for row in csv_f:
-    name, phone, role = row
-    print("Name: {}, Phone: {}, Role: {}".format(name, phone, role))
+# for row in csv_f:
+#     name, phone, role = row
+#     print("Name: {}, Phone: {}, Role: {}".format(name, phone, role))
 
-f.close()
+# f.close()
 
 # store data into a csv file
 hosts = [["workstation.local", "192.165.25.46"], ["webserver.cloud", "10.2.5.6"]]
