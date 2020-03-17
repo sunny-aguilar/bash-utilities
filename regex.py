@@ -25,4 +25,4 @@ print(result[1])
 result = re.search(r'aza', 'plaza')
 print(result)
 
-result = re.search()
+result = re.search(r'aza', 'bazaar')
