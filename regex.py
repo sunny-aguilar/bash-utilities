@@ -128,8 +128,9 @@ print(result)       # splits and stores delimeters
 result = re.sub(r'[\w.%+-]+@[\w.-]+', '[REDACTED]', "Received an email from go_nuts95@my.example.com")
 print(result)
 
-
-
+# search and replace
+result = re.sub(r'([w .-]*), ([\w .-]*)', r'\2 \1', 'Lovelace, Ada')
+print(result)
 
 
 
