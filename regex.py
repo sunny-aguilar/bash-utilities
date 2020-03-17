@@ -50,7 +50,7 @@ print(re.search(r'[Pp]ython', 'python'))
 # a range of characters using a dash [-]
 print(re.search(r'[A-Z]ack', 'jack'))
 print(re.search(r'[a-z]ack', 'jack'))
-print(re.search(r'[a-zA-Z0-9]ack', '9ack'))
+print(re.search(r'[a-zA-Z0-9]ack', '9ack')) # combine multiple ranges at once
 
 
 
