@@ -31,4 +31,8 @@ print(result)
 result = re.search(r'aza', 'maze')
 print(result)       # returns None meaning no match found
 
+print(re.search(r'^x', 'xenon'))
+
+
+
 
