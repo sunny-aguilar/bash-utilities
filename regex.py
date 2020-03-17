@@ -125,7 +125,7 @@ print(result)       # splits and stores delimeters
 
 
 # sub()
-result = re.sub(r'\w.%+-]+@[\w.-]+', '[REDACTED]', "Received an email from go_nuts95@my.example.com")
+result = re.sub(r'[\w.%+-]+@[\w.-]+', '[REDACTED]', "Received an email from go_nuts95@my.example.com")
 print(result)
 
 
