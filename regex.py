@@ -129,7 +129,7 @@ result = re.sub(r'[\w.%+-]+@[\w.-]+', '[REDACTED]', "Received an email from go_n
 print(result)
 
 # search and replace
-result = re.sub(r'([w .-]*), ([\w .-]*)', r'\2 \1', 'Lovelace, Ada')
+result = re.sub(r'^([w .-]*), ([\w .-]*)$', r'\2 \1', 'Lovelace, Ada')
 print(result)
 
 
