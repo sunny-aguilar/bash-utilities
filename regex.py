@@ -97,7 +97,7 @@ def rearrange_name(name):
 print(rearrange_name('Ritchie, Dennis'))
 
 
-# repitition qualifiers
+# repetition qualifiers
 print(re.search(r'[a-zA-Z]{5}', 'a ghost'))
 print(re.search(r'[a-zA-Z]{5}', 'a scary ghost appeared'))
 print(re.findall(r'\b[a-zA-Z]{5}\b', 'a scary ghost appeared')) # find complete words \b
