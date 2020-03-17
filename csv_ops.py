@@ -27,5 +27,19 @@ import csv
 #     writer.writerows(hosts)
 
 # dicreader to process CSV files with header row
-with open('csv_file.csv') as software:
-    reader = csv.DictReader(software)
+# with open('csv_file.csv') as software:
+#     reader = csv.DictReader(software)
+#     for row in reader:
+#         print(('{} has {} users').format(row['name'], row['users']))
+
+users = [{"name": "Sol Mansi", "username": "solm", "department": "IT infrastructure"},
+        {"name": "Lio Nelson", "username": "lion", "department": "User Experience Research"},
+        {"name": "Charlie Grey", "username": "greyc", "department": "Development"}]
+
+keys = ['name', 'username', 'department']
+
+with open('by_department.csv', 'w') as by_department:
+    writer = csv.DictWriter(by_department, fieldnames=keys)
+    writer.writeheader()
+    writer.writerows(users)
+
