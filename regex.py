@@ -64,6 +64,7 @@ print(re.findall(r'cat|dog', 'I like both dogs and cats.'))
 # repeated matches  .* (zero or more occurences of anything)
 print(re.search(r'Py.*n', 'Pygmalion'))
 print(re.search(r'Py.*n', 'Python Programming'))
+print(re.search(r'Py[a-z]*n', 'Python Programming'))
 
 
 
