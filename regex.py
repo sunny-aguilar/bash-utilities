@@ -117,8 +117,9 @@ print(extract_pid('99 elephants in a [cage]'))
 print(extract_pid('99 elephants in a [12345]'))
 
 
-
-
+# split()
+result = re.split(r'.?!', 'One sentence. Another one? And the last one!')
+print(result)
 
 
 
