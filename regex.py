@@ -66,7 +66,8 @@ print(re.search(r'Py.*n', 'Pygmalion'))
 print(re.search(r'Py.*n', 'Python Programming'))
 print(re.search(r'Py[a-z]*n', 'Python Programming'))
 
-
+# 1 or more occurrences of the character that comes before it
+print( re.match( r'o+l+', 'goldfish' ) )
 
 
 
