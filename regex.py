@@ -99,6 +99,7 @@ print(rearrange_name('Ritchie, Dennis'))
 
 # repitition qualifiers
 print(re.search(r'[a-zA-Z]{5}', 'a ghost'))
+print(re.search(r'[a-zA-Z]{5}', 'a scary ghost appeared'))
 
 
 
