@@ -44,8 +44,8 @@ print(re.search(r'p.ng', 'Pangaea', re.IGNORECASE))
 txt = "sandro"
 print(re.search(r'ndr', txt))
 
-
-
+# character classes []
+print(re.search(r'[Pp]ython', 'python'))
 
 
 
