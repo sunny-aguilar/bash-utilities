@@ -19,7 +19,7 @@ print(result[1])
 #   grep s.ing file.txt
 # -i on grep means search regardless of case
 # ^ begin search at the beginning i.e. grep ^fruit file.txt
-# $ searchgrep car$ file.txt
+# $ search at end of string grep car$ file.txt
 
 
 
