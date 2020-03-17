@@ -5,13 +5,13 @@ import os
 def create_python_script():
     comments = '#!/usr/bin/python3\n'\
                 '####################################################################\n'\
-                '# Author:              Sandro Aguilar\n'\
-                '# Date:                Month day, 2020\n'\
-                '# Class:               CS XXX\n'\
-                '# Description:         Enter description here\n'\
-                '#                      \n'\
-                '#                      \n'\
-                '#                      \n'\
+                '# Author:               Sandro Aguilar\n'\
+                '# Date:                 Month day, 2020\n'\
+                '# Class:                CS XXX\n'\
+                '# Description:          Enter description here\n'\
+                '#                       \n'\
+                '#                       \n'\
+                '#                       \n'\
                 '####################################################################\n'\
                 '\n\n\n'
 
