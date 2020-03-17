@@ -50,8 +50,8 @@ print(re.search(r'[Pp]ython', 'python'))
 # a range of characters using a dash [-]
 print(re.search(r'[A-Z]ack', 'jack'))
 print(re.search(r'[a-z]ack', 'jack'))
-print(re.search(r'[a-zA-Z0-9]ack', '9ack')) # combine multiple ranges at once
-print(re.search(r'[^a-z]ack', '4ack'))       # not in a range
+print(re.search(r'[a-zA-Z0-9]ack', '9ack'))     # combine multiple ranges at once
+print(re.search(r'[^a-z]ack', '4ack'))          # not in a range
 
 # find one expression or the other pipe |
 print(re.search(r'cat|dog', 'I like cats.'))
@@ -69,8 +69,9 @@ print(re.search(r'Py[a-z]*n', 'Python Programming'))
 # 1 or more occurrences of the character that comes before it
 print( re.search( r'o+l+', 'goldfish' ) )
 print( re.search( r'o+l+', 'woolly' ) )
+print( re.search( r'o+l+', 'boil' ) )           # returns none
 
-
+# ?: 0 or 1 occurrences of the character before it
 
 
 
