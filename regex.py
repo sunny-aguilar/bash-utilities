@@ -119,9 +119,9 @@ print(extract_pid('99 elephants in a [12345]'))
 
 # split() is used to split text into a list
 result = re.split(r'[.?!]', 'One sentence. Another one? And the last one!')
-print(result)
+print(result)       # splits by delimeter
 result = re.split(r'([.?!])', 'One sentence. Another one? And the last one!')
-print(result)
+print(result)       # splits and stores delimeters
 
 
 
