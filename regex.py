@@ -16,8 +16,9 @@ print(result[1])
 
 # /usr/share/dict/words
 # . a dot matches any character (wildcard)
+#   grep s.ing file.txt
 # -i on grep means search regardless of case
-
+# ^ being search at the beginning i.e.
 
 
 
