@@ -75,7 +75,7 @@ print( re.search( r'o+l+', 'boil' ) )           # returns none
 print(re.search(r'p?each', 'To each their own'))
 
 # escaping characters \
-print(re.match(r'\.com', 'www.suny.com'))
+print(re.match(r'.com', 'www.suny.com'))
 
 
 
