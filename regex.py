@@ -21,7 +21,7 @@ print(result[1])
 # ^ begin search at the beginning of line i.e. grep ^fruit file.txt
 # $ search at end of a line grep car$ file.txt
 
-# raw strings
+# raw strings - always use raw string for regex
 result = re.search(r'aza', 'plaza')
 print(result)
 
