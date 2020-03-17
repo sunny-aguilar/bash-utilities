@@ -66,7 +66,7 @@ print(re.search(r'Py.*n', 'Pygmalion'))
 print(re.search(r'Py.*n', 'Python Programming'))
 print(re.search(r'Py[a-z]*n', 'Python Programming'))
 
-# 1 or more occurrences of the character that comes before it
+# +: 1 or more occurrences of the character that comes before it
 print( re.search( r'o+l+', 'goldfish' ) )
 print( re.search( r'o+l+', 'woolly' ) )
 print( re.search( r'o+l+', 'boil' ) )           # returns none
@@ -79,7 +79,7 @@ print(re.search(r'\.com', 'www.suny.com'))
 rs = '\.com'
 print(re.search(rs, 'www.suny.com'))
 
-
+# capturing groups ()
 
 
 
