@@ -18,7 +18,8 @@ print(result[1])
 # . a dot matches any character (wildcard)
 #   grep s.ing file.txt
 # -i on grep means search regardless of case
-# ^ being search at the beginning i.e.
+# ^ being search at the beginning i.e. grep ^fruit file.txt
+# 
 
 
 
