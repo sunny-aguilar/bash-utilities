@@ -83,7 +83,7 @@ print(re.search(rs, 'www.suny.com'))
 result = re.search(r'^(\w*), (\w*)$', 'Lovelace, Ada')
 print(result)
 print(result.groups())
-
+print(result[0])
 
 
 
