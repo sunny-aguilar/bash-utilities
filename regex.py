@@ -40,5 +40,7 @@ print(re.search(r'p.ng', 'sponge'))
 # case insensitive
 print(r'p.ng', 'Pangaea', re.IGNORECASE)
 
-
+# my test using variables holding strings
+txt = "sandro"
+print(re.search(txt, 'ndr'))
 
