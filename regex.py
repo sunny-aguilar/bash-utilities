@@ -113,7 +113,7 @@ def extract_pid(log_line):
         return ""
     return result[1]
 
-print(extract_pid('99 elephants in a [cage]'))
+print(extract_pid('99 elephants in a [12345]'))
 
 
 
