@@ -53,6 +53,10 @@ print(re.search(r'[a-z]ack', 'jack'))
 print(re.search(r'[a-zA-Z0-9]ack', '9ack')) # combine multiple ranges at once
 print(re.search(r'[^a-z]ack', '4ack'))       # not in a range
 
+# find one expression or the other pipe |
+
+
+
 
 
 
