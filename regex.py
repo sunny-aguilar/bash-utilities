@@ -105,7 +105,13 @@ print(re.findall(r'\w{5,10}', 'I really like strawberries'))    # range of 5-10
 print(re.findall(r'\w{5,}', 'I really like strawberries'))      # range of 5 or more
 print(re.findall(r'\w{,20}', 'I really like strawberries'))     # range of 0 up to 20 chars
 
-# 
+# extracting PID exercise
+def extract_pid(log_line):
+    regex = '\[(\d+)\]'
+    result = re.search(regex, log_line)
+    if result is None:
+        return ""
+    return result[1]
 
 
 
