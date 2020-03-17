@@ -76,8 +76,8 @@ print(re.search(r'p?each', 'To each their own'))
 
 # escaping characters \
 print(re.search(r'\.com', 'www.suny.com'))
-
-
+rs = '\.com'
+print(re.search(rs, 'www.suny.com'))
 
 
 
