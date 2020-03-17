@@ -86,7 +86,7 @@ print(result.groups())
 print(result[0])
 print(result[1])
 print(result[2])
-print("{} {}".format(result[1], result[2]))
+print("{} {}".format(result[2], result[1]))
 
 
 
