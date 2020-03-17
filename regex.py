@@ -27,3 +27,8 @@ print(result)
 
 result = re.search(r'aza', 'bazaar')
 print(result)
+
+result = re.search(r'aza', 'maze')
+print(result)
+
+
