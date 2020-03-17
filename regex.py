@@ -33,6 +33,6 @@ print(result)       # returns None meaning no match found
 
 print(re.search(r'^x', 'xenon'))
 
-
+print(re.search(r'p.ng', 'penguin'))
 
 
