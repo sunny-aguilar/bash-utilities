@@ -48,7 +48,7 @@ print(re.search(r'ndr', txt))
 print(re.search(r'[Pp]ython', 'python'))
 
 # a range of characters using a dash [-]
-print(re.search(r'[a-z]ack', 'jack'))
+print(re.search(r'[A-Z]ack', 'jack'))
 
 
 
