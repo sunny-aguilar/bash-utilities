@@ -95,3 +95,17 @@ def rearrange_name(name):
     return "{} {}".format(result[2], result[1])
 
 print(rearrange_name('Ritchie, Dennis'))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
