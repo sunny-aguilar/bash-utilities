@@ -58,7 +58,8 @@ print(re.search(r'cat|dog', 'I like cats.'))
 print(re.search(r'cat|dog', 'I like dogs.'))
 print(re.search(r'cat|dog', 'I like both dogs and cats.'))
 
-
+# find all
+print(re.findall(r'cat|dog', 'I like both dogs and cats.'))
 
 
 
