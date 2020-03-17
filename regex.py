@@ -15,7 +15,7 @@ print(result[1])
 
 
 # /usr/share/dict/words
-# . a dot matches any character
+# . a dot matches any character (wildcard)
 # -i on grep means search regardless of case
 
 
