@@ -47,7 +47,8 @@ print(re.search(r'ndr', txt))
 # character classes []
 print(re.search(r'[Pp]ython', 'python'))
 
-
+# a range of characters using a dash [-]
+print(re.search(r'[a-z]', 'jack'))
 
 
 
