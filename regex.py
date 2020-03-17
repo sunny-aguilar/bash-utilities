@@ -11,3 +11,7 @@ log = 'July 31 97:51:48 mycomputer bad_process[12345]: ERROR Performing package 
 regex = r"\[(\d+)\]"
 result = re.search(regex, log)
 print(result[1])
+
+
+
+# /usr/share/dict/words
