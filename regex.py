@@ -42,5 +42,5 @@ print(re.search(r'p.ng', 'Pangaea', re.IGNORECASE))
 
 # my test using variables holding strings
 txt = "sandro"
-print(re.search(r'txt', 'ndr'))
+print(re.search(r'ndr', txt))
 
