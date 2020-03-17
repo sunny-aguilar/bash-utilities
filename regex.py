@@ -29,6 +29,6 @@ result = re.search(r'aza', 'bazaar')
 print(result)
 
 result = re.search(r'aza', 'maze')
-print(result)
+print(result)       # returns None meaning no match found
 
 
