@@ -71,7 +71,7 @@ print( re.search( r'o+l+', 'goldfish' ) )
 print( re.search( r'o+l+', 'woolly' ) )
 print( re.search( r'o+l+', 'boil' ) )           # returns none
 
-# ?: 0 or 1 occurrences of the character before it
+# ?:  0 or 1 occurrences of the character before it
 print(re.search(r'p?each', 'To each their own'))
 
 # escaping characters \
@@ -131,6 +131,11 @@ print(result)
 # search and replace
 result = re.sub(r'^([w .-]*), ([\w .-]*)$', r'\2 \1', 'Lovelace, Ada')
 print(result)
+
+
+
+
+
 
 
 
