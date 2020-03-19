@@ -21,4 +21,4 @@ while (cont.lower() == 'y'):
     seconds = int(input('Enter the number of seconds: '))
     print("That's {} seconds".format(to_seconds(hours, minutes, seconds)))
     print()
-    cont = 
+    cont = input()
