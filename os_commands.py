@@ -8,5 +8,9 @@
 #                       
 ####################################################################
 
+# input function to prompt for user input
+name = input('Please enter your name: ')
+
+
 
 
