@@ -14,8 +14,9 @@
 def to_seconds(hours, minutes, seconds):
     return hours*3600 + minutes * 60 + seconds
 
-
-
+cont = 'y'
+while (cont.lower() == 'y'):
+    hours = int(input('Enter the number of hours: '))
 
 
 
