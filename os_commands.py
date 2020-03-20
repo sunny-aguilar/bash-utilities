@@ -71,7 +71,7 @@ import subprocess
 # obtaining the output of a system command
 result = subprocess.run(['host', '8.8.8.8'], capture_output=True)
 print(result)
-print(result.stdout)
+print(result.stdout.decode().split())
 
 
 
