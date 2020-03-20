@@ -43,5 +43,5 @@ cont = 'y'
 # how to determine if command line instructions succeeded or failed
 import sys
 
-
+print(sys.argv)
 
