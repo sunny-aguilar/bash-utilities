@@ -96,7 +96,7 @@ line = 'Jul 6 14:04:02 computer.name CRON[29440]: USER (naughty_user)'
 result = re.search(pattern, line)
 print(result)
 
-
+# making sense of data
 
 
 
