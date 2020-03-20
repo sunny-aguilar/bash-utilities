@@ -23,7 +23,7 @@ cont = 'y'
 #     print()
 #     cont = input('do you want to do another conversion? [y to continue] ')
 
-print('Good bye!')
+#print('Good bye!')
 
 
 # input streams
