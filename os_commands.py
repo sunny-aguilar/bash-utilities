@@ -33,10 +33,11 @@ print("Now we generate an error to STDERR: " + data + 1)
 
 
 # environment variables
+import os
 
-
-
-
+print("HOME: " + os.environ.get("HOME", ""))
+print("HOME: " + os.environ.get("SHELL", ""))
+print("HOME: " + os.environ.get("FRUIT", ""))
 
 
 
