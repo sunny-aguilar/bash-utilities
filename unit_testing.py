@@ -5,7 +5,10 @@
 # Class:                Coursera - Unit Testing
 # Description:          Testing in Python (unit tests)
 ####################################################################
+import re
 
+def rearrange_name(name):
+    result = re.search(r'^([\w .]*)')
 
 
 
