@@ -3,8 +3,7 @@
 # Author:               Sandro Aguilar
 # Date:                 Month day, 2020
 # Class:                Coursera - Unit Testing
-# Description:          Testing in Python
-#                       
+# Description:          Testing in Python (unit tests)
 ####################################################################
 
 
