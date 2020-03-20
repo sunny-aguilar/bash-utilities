@@ -28,7 +28,7 @@ print('Good bye!')
 
 # input streams
 data = input("This will come from STDIN: ")
-print("We we write it to STDOUT: " + data + 1)
+print("We we write it to STDOUT: " + data)
 print("Now we generate an error to STDERR: " + data + 1)
 
 
