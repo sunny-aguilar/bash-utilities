@@ -99,6 +99,7 @@ print(result)
 # making sense of data
 usernames = {}
 name = 'good_user'
+# default value is 0 if key is not present and then add one to it
 usernames[name] = usernames.get(name, 0) + 1
 
 
