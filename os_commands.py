@@ -63,8 +63,8 @@ cont = 'y'
 # Python subprocesses
 import subprocess
 subprocess.run(['date'])
-subprocess.run(['sleep', '2'])
-subprocess.run(['ls', 'text_file'])
+subprocess.run(['sleep', '1'])
+subprocess.run(['ls', 'this_file'])
 
 
 
