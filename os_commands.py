@@ -62,10 +62,29 @@ cont = 'y'
 
 # Python subprocesses
 import subprocess
-subprocess.run(['date'])
-subprocess.run(['sleep', '1'])
-result = subprocess.run(['ls', 'this_file'])
-print(result.returncode)
+# subprocess.run(['date'])
+# subprocess.run(['sleep', '1'])
+# result = subprocess.run(['ls', 'this_file'])
+# print(result.returncode)
+
+
+# obtaining the output of a system command
+result = subprocess.run(['host', '8.8.8.8']), capture_output=True
+print(result)
+print(result.stdout)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
