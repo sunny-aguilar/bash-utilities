@@ -79,7 +79,10 @@ print(result.stdout)
 print(result.stderr)
 
 # advanced subprocess management
+import os
+import subprocess
 
+my_env = os.environ.copy()          # copy environment variables to pass to child
 
 
 
