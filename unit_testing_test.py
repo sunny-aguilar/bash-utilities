@@ -5,6 +5,8 @@
 # Class:                Coursera - unit testing
 # Description:          Enter description here
 ####################################################################
+import unittest
+
 from rearrange import rearrange_name
 
 
