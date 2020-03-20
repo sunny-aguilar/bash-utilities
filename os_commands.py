@@ -70,13 +70,13 @@ import subprocess
 
 # obtaining the output of a system command
 result = subprocess.run(['host', '8.8.8.8'], capture_output=True)
-print(result)
-print(result.stdout.decode().split())
+# print(result)
+# print(result.stdout.decode().split())
 
 result = subprocess.run(['rm', 'does_not_exist'], capture_output=True)
-print(result.returncode)
-print(result.stdout)
-print(result.stderr)
+# print(result.returncode)
+# print(result.stdout)
+# print(result.stderr)
 
 # advanced subprocess management
 import os
