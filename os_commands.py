@@ -79,12 +79,32 @@ result = subprocess.run(['rm', 'does_not_exist'], capture_output=True)
 # print(result.stderr)
 
 # advanced subprocess management
-import os
-import subprocess
+# import os
+# import subprocess
 
-my_env = os.environ.copy()          # copy environment variables to pass to child
-my_env['PATH'] = os.pathsep.join(['/opt/myapp/', my_env['PATH']])
-result = subprocess.run(['myapp'], env=my_env)
+# my_env = os.environ.copy()          # copy environment variables to pass to child
+# my_env['PATH'] = os.pathsep.join(['/opt/myapp/', my_env['PATH']])
+# result = subprocess.run(['myapp'], env=my_env)
+
+
+
+# filtering logs files with regular expressions
+import re
+
+pattern = r'USER \((\w+)\)$'
+line = 'Jul 6 14:04:02 computer.name CRON[29440]: USER (naughty user)'
+result = re.search(pattern, line)
+print(result[1])
+
+
+
+
+
+
+
+
+
+
 
 
 
