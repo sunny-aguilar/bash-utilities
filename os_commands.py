@@ -84,7 +84,7 @@ import subprocess
 
 my_env = os.environ.copy()          # copy environment variables to pass to child
 my_env['PATH'] = os.pathsep.join(['/opt/myapp/', my_env['PATH']])
-result = subprocess.run(['mapp'], env=my_env)
+result = subprocess.run(['myapp'], env=my_env)
 
 
 
