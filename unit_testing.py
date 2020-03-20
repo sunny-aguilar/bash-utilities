@@ -25,7 +25,7 @@ def validate_user(username, minlen):
         return False
     return True
 
-if (validate_user('Sunny', 0)):
+if (validate_user(100, 6)):
     print("validated")
 
 
