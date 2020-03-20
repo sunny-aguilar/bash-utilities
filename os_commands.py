@@ -97,9 +97,9 @@ result = re.search(pattern, line)
 print(result)
 
 # making sense of data
-
-
-
+username = {}
+name = 'good_user'
+usernames[name] = usernames.get(name, 0) + 1
 
 
 
