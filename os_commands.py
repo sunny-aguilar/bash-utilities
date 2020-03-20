@@ -64,8 +64,8 @@ cont = 'y'
 import subprocess
 subprocess.run(['date'])
 subprocess.run(['sleep', '1'])
-subprocess.run(['ls', 'this_file'])
-
+result = subprocess.run(['ls', 'this_file'])
+print(result.returncode)
 
 
 
