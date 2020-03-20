@@ -63,7 +63,7 @@ cont = 'y'
 # Python subprocesses
 import subprocess
 subprocess.run(['date'])
-subprocess.run(['sleep'])
+subprocess.run(['sleep', '2'])
 
 
 
