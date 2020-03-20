@@ -78,7 +78,7 @@ print(result.returncode)
 print(result.stdout)
 print(result.stderr)
 
-
+# advanced subprocess management
 
 
 
