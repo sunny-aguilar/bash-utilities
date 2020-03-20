@@ -61,7 +61,8 @@ cont = 'y'
 
 
 # Python subprocesses
-
+import subprocess
+subprocess.run(['date'])
 
 
 
