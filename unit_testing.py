@@ -14,12 +14,17 @@ def rearrange_name(name):
     return '{} {}'.format(result[2], result[1])
 
 
+# Errors and Exceptions
+def validate_user(username, minlen):
+    if minlen < 1:
+        raise ValueError('minlen must be at least 1')
+    if len(username) < minlen:
+        return False
+    if not username.isalnum():
+        return False
+    return True
 
-
-
-
-
-
+validate_user('Sunny', 5)
 
 
 
