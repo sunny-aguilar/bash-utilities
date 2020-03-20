@@ -1,12 +1,9 @@
 #!/usr/bin/python3
 ####################################################################
 # Author:               Sandro Aguilar
-# Date:                 Month day, 2020
-# Class:                CS XXX
+# Date:                 March 20, 2020
+# Class:                Coursera - unit testing
 # Description:          Enter description here
-#                       
-#                       
-#                       
 ####################################################################
 
 
