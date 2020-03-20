@@ -94,7 +94,7 @@ import re
 pattern1 = r'Sun'
 pattern = r"USER \((\w+)\)$"
 line1 = 'Sunny'
-line = 'Jul 6 14:04:02 computer.name CRON[29440]: USER (naughty user)'
+line = 'Jul 6 14:04:02 computer.name CRON[29440]: USER (naughty_user)'
 result1 = re.search(pattern1, line1)
 result = re.search(pattern, line)
 print(result)
