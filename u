@@ -22,7 +22,7 @@ if [ "$1" == 'push' ]; then
 
 elif [ "$1" == 'run' ]; then
     # run Python script
-    python3 os_commands.py $2 $3
+    python3 unit_testing.py $2 $3
     exit 0
 
 elif [ "$1" == 'runs' ]; then
