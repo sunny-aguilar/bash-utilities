@@ -22,7 +22,7 @@ class TestRearrange(unittest.TestCase):
     def test_double_name(self):
         testcase = "Hopper, Grace M."
         expected = "Grace M. Hopper"
-        self.assertEqual(rearrange_name(test))
+        self.assertEqual(rearrange_name(test), expected)
 
 
 unittest.main()
