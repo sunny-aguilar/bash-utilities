@@ -36,11 +36,11 @@ if test -n "$PATH"; then
 fi
 
 # while loops
-n=1
-while [ $n -le 5 ]; do
-    echo "Iteration number $n"
-    ((n+=1))
-done
+# n=1
+# while [ $n -le 5 ]; do
+#     echo "Iteration number $n"
+#     ((n+=1))
+# done
 
 n=0
 command=$1
@@ -49,6 +49,20 @@ while ! $command && [ $n -le 5 ]; do
     ((n=n+1))
     echo "Retry #$n"
 done;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
