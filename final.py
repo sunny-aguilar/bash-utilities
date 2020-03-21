@@ -20,8 +20,8 @@ print(re.search(r"ticky: ERROR: ([\w ]*) ", line))
 fruit = {"oranges": 3, "apples": 5, "bananas": 7, "pears": 2}
 print(sorted(fruit.items()))    # sorted by keys
 print(sorted(fruit.items(), key=operator.itemgetter(0)))    # sort by keys
-print(sorted(fruit.items(), key=operator.itemgetter(1)))     # sort by values
-
+print(sorted(fruit.items(), key=operator.itemgetter(1)))    # sort by values
+print(sorted(fruit.items(), key = operator.itemgetter(1), reverse=True))    # reverse sort
 
 
 
