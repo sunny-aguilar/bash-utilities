@@ -17,7 +17,7 @@ print(re.search(r"ticky: ERROR: ([\w ]*) ", line))
 
 
 fruit = {"oranges": 3, "apples": 5, "bananas": 7, "pears": 2}
-print(sorted(fruit.items()))
+print(sorted(fruit.items()))    # sorted by keys
 
 
 
