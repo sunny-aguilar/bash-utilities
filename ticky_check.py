@@ -21,7 +21,6 @@ with open('sys.log') as file:
         results = re.search(regex_info, parsed_row)
         print(results)
         print(results[0])
-        print(results[1])
 
 
 
