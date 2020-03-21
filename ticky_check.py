@@ -1,12 +1,9 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 ####################################################################
 # Author:               Sandro Aguilar
-# Date:                 Month day, 2020
-# Class:                CS XXX
+# Date:                 March 21, 2020
+# Class:                Coursera - final
 # Description:          Enter description here
-#                       
-#                       
-#                       
 ####################################################################
 
 
