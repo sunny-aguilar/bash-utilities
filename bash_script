@@ -7,7 +7,7 @@
 ####################################################################
 line="-----------------------------"
 echo "Starting at: $(date)"
-echo
+echo $line
 
 echo "UPTIME"
 uptime
@@ -15,7 +15,7 @@ echo $line
 
 echo "FREE"
 free
-echo
+echo $line
 
 echo "WHO"
 who
