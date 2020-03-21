@@ -23,6 +23,10 @@ with open('sys.log') as file:
             #print(results)
             print(results[0])
             #print(results[1])
+            if results[0] not in error_message:
+                error_message[results[0]] = 0 + 1
+            else:
+                
 
 
 
