@@ -16,8 +16,8 @@ with open('sys.log') as file:
     for row in file:
         parsed_row = row.strip()
         print(parsed_row)
-        regex = r"\[(\d+)\]"
-
+        regex_info = r"INFO"
+        regex_error = r"ERROR"
 
 
 
