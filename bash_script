@@ -35,9 +35,12 @@ if test -n "$PATH"; then
     echo "Your path is not empty"
 fi
 
-
-
-
+# while loops
+n=1
+while [ $n - -le 5 ]; do
+    echo "Iteration number $n"
+    ((n+=1))
+done
 
 
 
