@@ -5,13 +5,13 @@
 # Class:                Coursera - Bash Scripting
 # Description:          Interacting with the command line
 ####################################################################
-
+line="-----------------------------"
 echo "Starting at: $(date)"
 echo
 
 echo "UPTIME"
 uptime
-echo
+echo $line
 
 echo "FREE"
 free
