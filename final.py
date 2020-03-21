@@ -16,8 +16,8 @@ line = "May 27 11:45:40 ubuntu.local ticky: ERROR: Error creating ticket [#1234]
 print(re.search(r"ticky: ERROR: ([\w ]*) ", line))
 
 
-
-
+fruit = {"oranges": 3, "apples": 5, "bananas": 7, "pears": 2}
+sorted(fruit.items())
 
 
 
