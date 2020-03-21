@@ -8,7 +8,8 @@
 import re
 import operator
 
-
+error_message = {}
+user_count = {}
 
 
 
