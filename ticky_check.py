@@ -7,11 +7,15 @@
 ####################################################################
 import re
 import operator
+import csv
 
 error_message = {}
 user_count = {}
 
-
+with open('user_emails.csv') as software:
+    reader = csv.DictReader(software)
+    for row in reader:
+        print(('{} has {} users').format(row['name'], row['users']))
 
 
 
