@@ -6,6 +6,7 @@
 # Description:          Final project for course
 ####################################################################
 import re
+import operator
 
 
 regex = r"ticky: INFO: ([\w ]*) "
@@ -18,7 +19,7 @@ print(re.search(r"ticky: ERROR: ([\w ]*) ", line))
 
 fruit = {"oranges": 3, "apples": 5, "bananas": 7, "pears": 2}
 print(sorted(fruit.items()))    # sorted by keys
-
+print(sorted(fruit.items(), key=operator.itemgetter(0)))
 
 
 
