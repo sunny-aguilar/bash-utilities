@@ -18,7 +18,7 @@ with open('sys.log') as file:
         #print(parsed_row)
         regex_info = r"INFO"
         regex_error = r"ERROR"
-        results = re.findall(regex_info, parsed_row)
+        results = re.search(regex_info, parsed_row)
         print(results)
 
 
