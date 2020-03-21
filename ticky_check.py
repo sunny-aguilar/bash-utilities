@@ -26,9 +26,9 @@ with open('sys.log') as file:
             if results[0] not in error_message:
                 error_message[results[0]] = 0 + 1
             else:
-                
+                error_message[results[0]] += 1
 
-
+print(error_message)
 
 
 

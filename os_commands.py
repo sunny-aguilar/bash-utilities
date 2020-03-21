@@ -7,56 +7,56 @@
 ####################################################################
 
 # input function to prompt for user input
-# name = input('Please enter your name: ')
-# print("Hello, " + name + '.')
+name = input('Please enter your name: ')
+print("Hello, " + name + '.')
 
 
 def to_seconds(hours, minutes, seconds):
     return hours*3600 + minutes * 60 + seconds
 
 cont = 'y'
-# while (cont.lower() == 'y'):
-#     hours = int(input('Enter the number of hours: '))
-#     minutes = int(input('Enter the number of minutes: '))
-#     seconds = int(input('Enter the number of seconds: '))
-#     print("That's {} seconds".format(to_seconds(hours, minutes, seconds)))
-#     print()
-#     cont = input('do you want to do another conversion? [y to continue] ')
+while (cont.lower() == 'y'):
+    hours = int(input('Enter the number of hours: '))
+    minutes = int(input('Enter the number of minutes: '))
+    seconds = int(input('Enter the number of seconds: '))
+    print("That's {} seconds".format(to_seconds(hours, minutes, seconds)))
+    print()
+    cont = input('do you want to do another conversion? [y to continue] ')
 
-#print('Good bye!')
+print('Good bye!')
 
 
 # input streams
-# data = input("This will come from STDIN: ")
-# print("We we write it to STDOUT: " + data)
-# print("Now we generate an error to STDERR: " + data + 1)
+data = input("This will come from STDIN: ")
+print("We we write it to STDOUT: " + data)
+print("Now we generate an error to STDERR: " + data + 1)
 
 
 # get environment variables
-# import os
+import os
 
-# print("HOME: " + os.environ.get("HOME", ""))
-# print("HOME: " + os.environ.get("SHELL", ""))
-# print("HOME: " + os.environ.get("FRUIT", "NOT PRESENT"))
+print("HOME: " + os.environ.get("HOME", ""))
+print("HOME: " + os.environ.get("SHELL", ""))
+print("HOME: " + os.environ.get("FRUIT", "NOT PRESENT"))
 
 
 
 # how to determine if command line instructions succeeded or failed
-# import sys
-# print(sys.argv)
+import sys
+print(sys.argv)
 
 # command-line arguments
-# import os
-# import sys
+import os
+import sys
 
-# filename=sys.argv[1]
+filename=sys.argv[1]
 
-# if not os.path.exists(filename):
-#     with open(filename, 'w') as f:
-#         f.write('New file created\n')
-# else:
-#     print('Error, the file {} already exists!'.format(filename))
-#     sys.exit(1)
+if not os.path.exists(filename):
+    with open(filename, 'w') as f:
+        f.write('New file created\n')
+else:
+    print('Error, the file {} already exists!'.format(filename))
+    sys.exit(1)
 
 
 
@@ -69,22 +69,22 @@ print(result.returncode)
 
 
 # obtaining the output of a system command
-# result = subprocess.run(['host', '8.8.8.8'], capture_output=True)
-# print(result)
-# print(result.stdout.decode().split())
+result = subprocess.run(['host', '8.8.8.8'], capture_output=True)
+print(result)
+print(result.stdout.decode().split())
 
 result = subprocess.run(['rm', 'does_not_exist'], capture_output=True)
-# print(result.returncode)
-# print(result.stdout)
-# print(result.stderr)
+print(result.returncode)
+print(result.stdout)
+print(result.stderr)
 
 # advanced subprocess management
-# import os
-# import subprocess
+import os
+import subprocess
 
-# my_env = os.environ.copy()          # copy environment variables to pass to child
-# my_env['PATH'] = os.pathsep.join(['/opt/myapp/', my_env['PATH']])
-# result = subprocess.run(['myapp'], env=my_env)
+my_env = os.environ.copy()          # copy environment variables to pass to child
+my_env['PATH'] = os.pathsep.join(['/opt/myapp/', my_env['PATH']])
+result = subprocess.run(['myapp'], env=my_env)
 
 
 
