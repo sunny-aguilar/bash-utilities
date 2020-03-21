@@ -15,7 +15,7 @@ user_count = {}
 with open('sys.log') as file:
     for row in file:
         parsed_row = row.strip()
-        #print(parsed_row)
+        print(parsed_row)
         regex_info = r"INFO"
         regex_error = r"ERROR"
         results = re.search(regex_error, parsed_row)
