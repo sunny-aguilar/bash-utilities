@@ -14,8 +14,9 @@ user_count = {}
 
 with open('sys.log') as file:
     for row in file:
-        print(row.strip())
-
+        parsed_row = row.strip()
+        print(parsed_row)
+        regex = r"\[(\d+)\]"
 
 
 
