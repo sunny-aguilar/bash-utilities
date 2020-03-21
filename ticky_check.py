@@ -20,8 +20,8 @@ with open('sys.log') as file:
         regex_error = r"ERROR"
         results = re.search(regex_info, parsed_row)
         print(results)
-
-
+        print(results[0])
+        print(results[1])
 
 
 
