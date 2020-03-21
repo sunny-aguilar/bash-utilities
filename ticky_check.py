@@ -14,7 +14,7 @@ user_count = {}
 
 with open('sys.log') as file:
     for row in file:
-        print(row)
+        print(row.strip())
 
 
 
