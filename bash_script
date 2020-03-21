@@ -19,7 +19,7 @@ echo
 
 echo "WHO"
 who
-echo
+echo $line
 
 echo "Finishing at: $(date)"
 
