@@ -10,7 +10,7 @@ import re
 
 regex = r"ticky: INFO: ([\w ]*) "
 line = "May 27 11:45:40 ubuntu.local ticky: INFO: Created ticket [#1234] (username)"
-re.search(r"ticky: INFO: ([\w ]*) ", line)
+print(re.search(r"ticky: INFO: ([\w ]*) ", line))
 
 
 
