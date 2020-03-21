@@ -12,7 +12,7 @@ import csv
 error_message = {}
 user_count = {}
 
-with open('user_emails.csv') as file:
+with open('sys.log') as file:
     for row in file:
         print(row)
 
