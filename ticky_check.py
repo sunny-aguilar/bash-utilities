@@ -19,8 +19,9 @@ with open('sys.log') as file:
         regex_info = r"INFO"
         regex_error = r"ERROR"
         results = re.search(regex_info, parsed_row)
-        print(results)
-        print(results[0])
+        if results is not None:
+            print(results)
+            print(results[0])
 
 
 
