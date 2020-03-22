@@ -50,7 +50,7 @@ with open('sys.log') as file:
         print(results_user[0])
 
 
-        if results_TYPE == "INFO ":
+        if results_TYPE[0] == "INFO ":
             print(results_TYPE[0])
         elif results_TYPE == "ERROR":
             print(results_TYPE[0])
