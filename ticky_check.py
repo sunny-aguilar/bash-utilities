@@ -17,7 +17,7 @@ with open('sys.log') as file:
         parsed_row = row.strip()
         #print(parsed_row)
         regex_info = r"INFO(\s)*([\w ]*)"
-        regex_error = r"ERROR"
+        regex_error = r"ERROR(\s)*([\w ]*)"
         results = re.search(regex_info, parsed_row)
         if results is not None:
             #print(results)
