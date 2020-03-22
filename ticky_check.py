@@ -20,7 +20,7 @@ with open('sys.log') as file:
         regex_error = r"ERROR(\s)*([\w ]*)"
         info_results = re.search(regex_info, parsed_row)
         error_results = re.search(regex_error, parsed_row)
-        if results is not None:
+        if info_results is not None:
             #print(results)
             print(info_results[0])
             #print(results[1])
