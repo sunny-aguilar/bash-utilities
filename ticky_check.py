@@ -49,9 +49,9 @@ with open('sys.log') as file:
 
 
             if results_user[0] not in user_count:
-                user_count[results_user[0]] = 0 + 1
+                #user_count[results_user[0]] = 0 + 1
                 results_info = re.search(regex_info, parsed_row)
-                
+
             else:
                 user_count[results_user[0]] += 1
 
