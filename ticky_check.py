@@ -35,7 +35,7 @@ with open('sys.log') as file:
             if user_results[0] not in user_count:
                 user_count[user_results[0]] = 0 + 1
             else:
-                user_count[results[0]] += 1
+                user_count[user_results[0]] += 1
 
 print()
 print("Error Message Dictionary:")
