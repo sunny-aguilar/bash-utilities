@@ -58,7 +58,7 @@ with open('sys.log') as file:
                     if results_info[0] not in user_count:
                         user_count[results_info[0]] = 0 + 1
                     else:
-                        user_count[regex_info[0]] += 1
+                        user_count[results_info[0]] += 1
 
             else:
                 user_count[results_user[0]] += 1
