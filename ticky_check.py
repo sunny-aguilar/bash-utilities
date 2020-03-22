@@ -18,15 +18,16 @@ with open('sys.log') as file:
         #print(parsed_row)
         regex_info = r"INFO(\s)*([\w ]*)"
         regex_error = r"ERROR(\s)*([\w ]*)"
-        results = re.search(regex_info, parsed_row)
+        info_results = re.search(regex_info, parsed_row)
+        error_results = re.search(regex_error, parsed_row)
         if results is not None:
             #print(results)
-            print(results[0])
+            print(info_results[0])
             #print(results[1])
-            if results[0] not in error_message:
-                error_message[results[0]] = 0 + 1
+            if info_results[0] not in error_message:
+                error_message[info_results[0]] = 0 + 1
             else:
-                error_message[results[0]] += 1
+                error_message[info_results[0]] += 1
 
 print(error_message)
 
