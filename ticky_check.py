@@ -52,7 +52,7 @@ with open('sys.log') as file:
                 #user_count[results_user[0]] = 0 + 1
                 results_info = re.search(regex_info, parsed_row)
                 if results_info is not None:
-                    print("INFO: " + results_info)
+                    print("INFO: " + results_info[0])
             else:
                 user_count[results_user[0]] += 1
 
