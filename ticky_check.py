@@ -47,11 +47,6 @@ with open('sys.log') as file:
         results_user = re.search(regex_user, parsed_row)
 
 
-        print(results_info[0])
-        print(results_error[0])
-        print(results_TYPE[0])
-
-
 
         # if username is found, parse message
         # if results_user is not None:
