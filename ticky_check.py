@@ -32,14 +32,14 @@ with open('sys.log') as file:
         regex_info = r"INFO(\s)*([\w ]*)"
         regex_message = r'[A-Z]{4}[A-Z]*(\s)*([\w ]*)'
 
-        user_results = re.search(regex_user, parsed_row)
+        results_user = re.search(regex_user, parsed_row)
         results_info = re.search(regex_info, parsed_row)
-        if user_results is not None:
-            print(user_results[0])
-            if user_results[0] not in user_count:
-                user_count[user_results[0]] = 0 + 1
+        if results_user is not None:
+            print(results_user[0])
+            if results_user[0] not in user_count:
+                user_count[results_user[0]] = 0 + 1
             else:
-                user_count[user_results[0]] += 1
+                user_count[results_user[0]] += 1
 
 print()
 print("Error Message Dictionary:")
