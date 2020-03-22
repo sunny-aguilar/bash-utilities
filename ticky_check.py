@@ -46,7 +46,7 @@ with open('sys.log') as file:
         #regex_user = r"\([\w.]*\)$"
         #results_user = re.search(regex_user, parsed_row)
         regex_user = r"\((.*?)\)"
-        results_user = re.search(regex_user, s).group(1)
+        results_user = re.search(regex_user, parsed_row).group(1)
 
 
         #print(results_user[0])
