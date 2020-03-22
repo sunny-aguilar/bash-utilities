@@ -53,7 +53,8 @@ with open('sys.log') as file:
                 results_info = re.search(regex_info, parsed_row)
                 if results_info is not None:
                     print("INFO:")
-                    print(results_info)
+                    print(results_info[0])
+                    user_count[0] = 0 + 1
             else:
                 user_count[results_user[0]] += 1
 
