@@ -56,6 +56,8 @@ with open('sys.log') as file:
                     print("INFO:")
                     print(results_info[0])
                     user_count[results_info[0]] = 0 + 1
+                else:
+                    user_count[results_info[0]] += 1
             else:
                 user_count[results_user[0]] += 1
 
