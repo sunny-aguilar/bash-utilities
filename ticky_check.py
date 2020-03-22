@@ -72,7 +72,7 @@ with open('sys.log') as file:
                     else:
                         user_count[results_user[0]] += 1
 
-                user_count[results_user[0]] += 1
+                #user_count[results_user[0]] += 1
 
 print()
 print("Error Message Dictionary:")
