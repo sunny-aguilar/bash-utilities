@@ -44,10 +44,11 @@ with open('sys.log') as file:
         regex_user = r"\([\w.]*\)$"
         results_user = re.search(regex_user, parsed_row)
 
+        # get user name
         if results_user is not None:
             print(results_user[0])
 
-
+            # if user is not in user_count dictionary
             if results_user[0] not in user_count:
                 #user_count[results_user[0]] = 0 + 1
                 results_info = re.search(regex_info, parsed_row)
