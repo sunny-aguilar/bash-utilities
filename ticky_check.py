@@ -46,31 +46,41 @@ with open('sys.log') as file:
 
         # if username is found, parse message
         if results_user is not None:
-            print("Username: " + results_user[0])
 
-            # if user is not in user_count dictionary
-            if results_user[0] not in user_count:
-                #user_count[results_user[0]] = 0 + 1
 
-                # find INFO in log
-                results_info = re.search(regex_info, parsed_row)
-                if results_info is not None:
-                    #print("INFO: " + results_info[0])
-                    if results_info[0] not in user_count:
-                        print("INFO: " + results_info[0])
-                        user_count[results_user[0]] = 0 + 1
-                    # else:
-                    #     user_count[results_user[0]] += 1
 
-            else:
-                # find INFO in log
-                results_info = re.search(regex_info, parsed_row)
-                if results_info is not None:
-                    if results_info[0] not in user_count:
-                        print("INFO: " + results_info[0])
-                        user_count[results_user[0]] = 0 + 1
-                    else:
-                        user_count[results_user[0]] += 1
+
+
+
+
+
+
+        # if results_user is not None:
+        #     print("Username: " + results_user[0])
+
+        #     # if user is not in user_count dictionary
+        #     if results_user[0] not in user_count:
+        #         #user_count[results_user[0]] = 0 + 1
+
+        #         # find INFO in log
+        #         results_info = re.search(regex_info, parsed_row)
+        #         if results_info is not None:
+        #             #print("INFO: " + results_info[0])
+        #             if results_info[0] not in user_count:
+        #                 print("INFO: " + results_info[0])
+        #                 user_count[results_user[0]] = 0 + 1
+        #             # else:
+        #             #     user_count[results_user[0]] += 1
+
+        #     else:
+        #         # find INFO in log
+        #         results_info = re.search(regex_info, parsed_row)
+        #         if results_info is not None:
+        #             if results_info[0] not in user_count:
+        #                 print("INFO: " + results_info[0])
+        #                 user_count[results_user[0]] = 0 + 1
+        #             else:
+        #                 user_count[results_user[0]] += 1
 
                 #user_count[results_user[0]] += 1
 
