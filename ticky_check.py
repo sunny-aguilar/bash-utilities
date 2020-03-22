@@ -36,6 +36,8 @@ with open('sys.log') as file:
         results_info = re.search(regex_info, parsed_row)
         regex_error = r"ERROR"
         results_error = re.search(regex_error, parsed_row)
+        regex_TYPE = r"[A-Z]{4}.?"
+        results_TYPE = re.search(regex_TYPE, parsed_row)
 
 
         regex_all = r"[A-Z]{4}.*"
@@ -47,7 +49,7 @@ with open('sys.log') as file:
 
         # if username is found, parse message
         if results_user is not None:
-            if 
+            if results
 
 
 
