@@ -61,7 +61,7 @@ with open('sys.log') as file:
 
         elif results_TYPE[0] == "ERROR":
             if results_user is not None:
-                print(results_user[0] + " : " + results_TYPE[0])
+                print(results_user + " : " + results_TYPE[0])
 
 
 
