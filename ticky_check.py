@@ -55,13 +55,14 @@ with open('sys.log') as file:
         if results_TYPE[0] == "INFO ":
             if results_user is not None:
                 print(results_user + " : " + results_TYPE[0])
-                #if user_count[results_user] not in user_count:
-                user_count[results_user] = 0 + 1
+                if user_count[results_user] not in user_count:
+                    # user_count[results_user] = 0 + 1
+                    print('REACHED')
 
         elif results_TYPE[0] == "ERROR":
             if results_user is not None:
                 print(results_user + " : " + results_TYPE[0])
-                user_count[results_user] = 0 + 1
+
 
 
 
