@@ -28,17 +28,22 @@ with open('sys.log') as file:
             else:
                 error_message[info_results[0]] += 1
 
-        regex_error = r"ERROR(\s)*([\w ]*)"
-        error_results = re.search(regex_error, parsed_row)
-        if error_results is not None:
-            print(error_results[0])
-            if error_results[0] not in 
+        regex_user = r"\([\w.]*\)$"
+        user_results = re.search(regex_user, parsed_row)
+        if user_results is not None:
+            print(user_results[0])
+            if user_results[0] not in user_count:
+                user_count[user_results[0]] = 0 + 1
+            else:
+                user_count[results[0]] += 1
 
 print()
 print("Error Message Dictionary:")
 print(error_message)
-
-
+print()
+print("User Usage Dictionary:")
+print(user_count)
+print()
 
 
 
