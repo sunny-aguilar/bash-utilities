@@ -47,7 +47,7 @@ with open('sys.log') as file:
         results_user = re.search(regex_user, parsed_row)
 
 
-        print(results_user[0])
+        #print(results_user[0])
 
 
         if results_TYPE[0] == "INFO ":
