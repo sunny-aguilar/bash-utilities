@@ -55,8 +55,7 @@ with open('sys.log') as file:
                 # find INFO in log
                 results_info = re.search(regex_info, parsed_row)
                 if results_info is not None:
-                    print("INFO:")
-                    print(results_info[0])
+                    print("INFO:" + results_info[0])
                     if results_info[0] not in user_count:
                         user_count[results_user[0]] = 0 + 1
                     # else:
