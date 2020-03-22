@@ -51,7 +51,9 @@ with open('sys.log') as file:
 
 
         if results_TYPE[0] == "INFO ":
-            print(results_TYPE[0])
+            if user_count[results_user[0]] not in user_count:
+                user_count[results_user[0]]
+
         elif results_TYPE[0] == "ERROR":
             print(results_TYPE[0])
 
