@@ -29,7 +29,7 @@ with open('sys.log') as file:
             else:
                 error_message[info_results[0]] += 1
 
-print()
+print("")
 print(Error Message Dictionary:)
 print(error_message)
 
