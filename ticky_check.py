@@ -17,9 +17,8 @@ with open('sys.log') as file:
         parsed_row = row.strip()
         #print(parsed_row)
         regex_info = r"INFO(\s)*([\w ]*)"
-        regex_error = r"ERROR(\s)*([\w ]*)"
         info_results = re.search(regex_info, parsed_row)
-        error_results = re.search(regex_error, parsed_row)
+
         if info_results is not None:
             #print(results)
             print(info_results[0])
@@ -28,6 +27,12 @@ with open('sys.log') as file:
                 error_message[info_results[0]] = 0 + 1
             else:
                 error_message[info_results[0]] += 1
+
+        regex_error = r"ERROR(\s)*([\w ]*)"
+        error_results = re.search(regex_error, parsed_row)
+        if error_results is not None:
+            print(error_results[0])
+            if error_results[0] not in 
 
 print()
 print("Error Message Dictionary:")
