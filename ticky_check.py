@@ -44,7 +44,7 @@ with open('sys.log') as file:
         regex_user = r"\([\w.]*\)$"
         results_user = re.search(regex_user, parsed_row)
 
-        # get user name
+        # if username is found, parse message
         if results_user is not None:
             print(results_user[0])
 
