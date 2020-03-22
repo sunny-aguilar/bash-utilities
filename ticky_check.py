@@ -29,6 +29,7 @@ with open('sys.log') as file:
                 error_message[info_results[0]] += 1
 
         regex_user = r"\([\w.]*\)$"
+        regex_user = r"\([\w.]*\)$"
         user_results = re.search(regex_user, parsed_row)
         if user_results is not None:
             print(user_results[0])
