@@ -43,8 +43,10 @@ with open('sys.log') as file:
         regex_all = r"[A-Z]{4}.*"
         results_all = re.search(regex_all, parsed_row)
 
-        regex_user = r"\([\w.]*\)$"
-        results_user = re.search(regex_user, parsed_row)
+        #regex_user = r"\([\w.]*\)$"
+        #results_user = re.search(regex_user, parsed_row)
+        regex_user = r"\((.*?)\)"
+        results_user = re.search(r'\((.*?)\)',s).group(1)
 
 
         #print(results_user[0])
