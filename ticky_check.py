@@ -48,7 +48,7 @@ with open('sys.log') as file:
 
 
         print(results_user[0])
-
+        print(regex_TYPE[0])
 
         # if username is found, parse message
         # if results_user is not None:
