@@ -32,12 +32,14 @@ with open('sys.log') as file:
         #regex_info_message = r"INFO(\s)*([\w ]*)"
 
 
-        
         regex_info = r"INFO"
         results_info = re.search(regex_info, parsed_row)
         regex_error = r"ERROR"
         results_error = re.search(regex_error, parsed_row)
 
+
+        regex_all = r"[A-Z]{4}.*"
+        results_all = re.search(regex_all, parsed_row)
         regex_user = r"\([\w.]*\)$"
         results_user = re.search(regex_user, parsed_row)
         if results_user is not None:
