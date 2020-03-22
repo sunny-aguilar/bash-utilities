@@ -30,6 +30,9 @@ with open('sys.log') as file:
 
         #regex_message = r'[A-Z]{4}[A-Z]*(\s)*([\w ]*)'
         #regex_info_message = r"INFO(\s)*([\w ]*)"
+
+
+        
         regex_info = r"INFO"
         results_info = re.search(regex_info, parsed_row)
         regex_error = r"ERROR"
