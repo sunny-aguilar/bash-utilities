@@ -21,7 +21,7 @@ with open('sys.log') as file:
 
         if results_error is not None:
             #print(results)
-            print(results_error[0])
+            #print(results_error[0])
             #print(results[1])
             if results_error[0] not in error_message:
                 error_message[results_error[0]] = 0 + 1
@@ -55,7 +55,7 @@ with open('sys.log') as file:
                 # find INFO in log
                 results_info = re.search(regex_info, parsed_row)
                 if results_info is not None:
-                    print("INFO:" + results_info[0])
+                    print("INFO: " + results_info[0])
                     if results_info[0] not in user_count:
                         user_count[results_user[0]] = 0 + 1
                     # else:
