@@ -28,12 +28,13 @@ with open('sys.log') as file:
             else:
                 error_message[results_error[0]] += 1
 
-        regex_user = r"\([\w.]*\)$"
-        regex_info = r"INFO(\s)*([\w ]*)"
         regex_message = r'[A-Z]{4}[A-Z]*(\s)*([\w ]*)'
-
-        results_user = re.search(regex_user, parsed_row)
+        regex_info = r"INFO(\s)*([\w ]*)"
+        regex_info = r"INFO"
         results_info = re.search(regex_info, parsed_row)
+
+        regex_user = r"\([\w.]*\)$"
+        results_user = re.search(regex_user, parsed_row)
         if results_user is not None:
             print(results_user[0])
             if results_user[0] not in user_count:
