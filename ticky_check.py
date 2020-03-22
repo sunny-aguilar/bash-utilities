@@ -48,12 +48,12 @@ with open('sys.log') as file:
 
 
         print(results_user[0])
-        print(results_TYPE[0])
 
-        # if username is found, parse message
-        # if results_user is not None:
-        #     if results
 
+        if results_TYPE == "INFO ":
+            print(results_TYPE[0])
+        elif results_TYPE == "ERROR":
+            print(results_TYPE[0])
 
 
 
