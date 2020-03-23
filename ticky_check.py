@@ -19,7 +19,7 @@ def parse_logs(error_message, user_count, error_tracker):
             results_error = re.search(regex_error, parsed_row)
 
             if results_error is not None:
-                if results_error[0] not in error_message:
+                if results_error.group(0) not in error_message:
                     error_message[results_error[0]] = 0 + 1
                 else:
                     error_message[results_error[0]] += 1
@@ -47,12 +47,10 @@ def parse_logs(error_message, user_count, error_tracker):
                     #? debugging - show usernames and type of syslog interaction
                     # print(results_user + " : " + results_TYPE[0])
                     if results_user not in user_count:
-                        # user_count[results_user] = [0, 0]
-                        # user_count[results_user][0] += 1
+
                         user_count[results_user] = [results_user, 0 , 0]
                         user_count[results_user][1] += 1
                     else:
-                        #user_count[results_user][0] += 1
                         user_count[results_user][1] += 1
 
             # find 'ERROR' and store user stats in dictionary
@@ -61,25 +59,20 @@ def parse_logs(error_message, user_count, error_tracker):
                     #? debugging - show usernames and type of syslog interaction
                     # print(results_user + " : " + results_TYPE[0])
                     if results_user not in user_count:
-                        # user_count[results_user] = [0, 0]
-                        # user_count[results_user][1] += 1
                         user_count[results_user] = [results_user, 0, 0]
                         user_count[results_user][2] += 1
                     else:
-                        #user_count[results_user][1] += 1
                         user_count[results_user][2] += 1
 
 
 # create CSV file with sorted message data
 def create_csv(file_name, data):
-    # create errors CSV file
-    #keys = ['Error', 'Count']
-    #data = [{'Error': "wrong", 'Count': '5'}, {'Error': 'mess up', 'Count': 3}]
     # create CSV file and create column names
     with open(file_name, 'w') as error_file:
         writer = csv.writer(error_file)
-        for key, value in data.items():
-            writer.writerow([key, value])
+        writer.writerows(data)
+        # for key, value in data.items():
+        #     writer.writerow([key, value])
 
 # create CSV file with sorted error data
 def create_csv_user(file_name, data):
@@ -111,12 +104,14 @@ def main():
     # save sorted dictionary in a new dict to keep sort
     sorted_msg = sorted(error_message.items(), key=operator.itemgetter(1), reverse=True)
     sorted_msg.insert(0, ("Error", "Count"))
-    for item in sorted_msg:
-        sorted_m[item[0]] = item[1]
-    #print(error_message)
-    #print(sorted_msg)
-    print(sorted_m)
+    print(sorted_msg)
     print()
+    #sorted_msg = sorted(error_message.items(), key=operator.itemgetter(1), reverse=True)
+    #sorted_msg.insert(0, ("Error", "Count"))
+    # for item in sorted_msg:
+    #     sorted_m[item[0]] = item[1]
+
+    # print(sorted_m)
 
 
     print("User Usage Dictionary:")
@@ -141,7 +136,7 @@ def main():
 
 
     # create CSV files
-    create_csv('error_message.csv', sorted_m)
+    create_csv('error_message.csv', sorted_msg)
     create_csv_user('user_statistics.csv', sorted_u_list)
 
 
