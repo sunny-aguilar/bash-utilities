@@ -95,6 +95,7 @@ def main():
     sorted_msg = {}
     sorted_user = {}
 
+    # save sorted dictionaries
     sorted_m = {}
     sorted_u = {}
 
