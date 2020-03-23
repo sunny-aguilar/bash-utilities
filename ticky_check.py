@@ -98,32 +98,18 @@ def main():
     sorted_m = {}
     sorted_u = {}
 
-    # debugging - show sorted dictionaries
-    print()
-    print("Error Message Dictionary:")
     # save sorted dictionary in a new dict to keep sort
     sorted_msg = sorted(error_message.items(), key=operator.itemgetter(1), reverse=True)
     sorted_msg.insert(0, ("Error", "Count"))
-    print(sorted_msg)
-    print()
-    #sorted_msg = sorted(error_message.items(), key=operator.itemgetter(1), reverse=True)
-    #sorted_msg.insert(0, ("Error", "Count"))
-    # for item in sorted_msg:
-    #     sorted_m[item[0]] = item[1]
 
-
-
-    print("User Usage Dictionary:")
 
     # save sorted dictionary in a new dict to keep sort
     sorted_user = sorted(user_count.items())
-
     sorted_user = sorted(user_count.items(), key=operator.itemgetter(1), reverse=False)
 
     #sorted_user.insert(0, ("Username", ["Username", "INFO", "ERROR"]))
     for item in sorted_user:
         sorted_u[item[0]] = item[1]
-
 
     sorted_u_list = []
     for item in sorted_u:
