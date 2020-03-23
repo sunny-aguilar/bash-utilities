@@ -80,7 +80,7 @@ def main():
         print("ERROR: Missing command-line argument!")
         print("Exiting program...")
         sys.exit(1)
-    
+
     # Open the files
     csv_file = sys.argv[1]
     html_file = sys.argv[2]
