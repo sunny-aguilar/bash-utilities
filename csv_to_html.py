@@ -15,7 +15,7 @@ def process_csv(csv_file):
     with open(csv_file,"r") as datafile:
         data = list(csv.reader(datafile))
     return data
-    
+
 def data_to_html(title, data):
     """Turns a list of lists into an HTML table"""
 
@@ -84,18 +84,18 @@ def main():
     # Open the files
     csv_file = sys.argv[1]
     html_file = sys.argv[2]
-    
+
     # Check that file extensions are included
     if ".csv" not in csv_file:
         print('Missing ".csv" file extension from first command-line argument!')
         print("Exiting program...")
         sys.exit(1)
-    
+
     if ".html" not in html_file:
         print('Missing ".html" file extension from second command-line argument!')
         print("Exiting program...")
         sys.exit(1)
-    
+
     # Check that the csv file exists
     if not os.path.exists(csv_file):
         print("{} does not exist".format(csv_file))
