@@ -114,15 +114,12 @@ def main():
 
 
     print("User Usage Dictionary:")
-    print(user_count)
-    print()
+
     # save sorted dictionary in a new dict to keep sort
     sorted_user = sorted(user_count.items())
-    print(sorted_user)
-    print()
+
     sorted_user = sorted(user_count.items(), key=operator.itemgetter(1), reverse=False)
-    print(sorted_user)
-    print()
+
     #sorted_user.insert(0, ("Username", ["Username", "INFO", "ERROR"]))
     for item in sorted_user:
         sorted_u[item[0]] = item[1]
@@ -133,11 +130,8 @@ def main():
         sorted_u_list.append(sorted_u.get(item))
 
     sorted_u_list.sort()
-    print()
-    print(sorted_u_list)
-    print()
     sorted_u_list.insert(0, ["Username", "INFO", "ERROR"])
-    print(sorted_u_list)
+
 
 
     # create CSV files
