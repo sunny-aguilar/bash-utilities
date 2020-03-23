@@ -105,9 +105,6 @@ def main():
 
     # save sorted dictionary in a new dict to keep sort
     sorted_user = sorted(user_count.items())
-    sorted_user = sorted(user_count.items(), key=operator.itemgetter(1), reverse=False)
-
-    #sorted_user.insert(0, ("Username", ["Username", "INFO", "ERROR"]))
     for item in sorted_user:
         sorted_u[item[0]] = item[1]
 
