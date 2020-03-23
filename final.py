@@ -40,7 +40,3 @@ print(sorted(fruit.items(), key = operator.itemgetter(1), reverse=True))    # re
 
 
 
-
-
-
-

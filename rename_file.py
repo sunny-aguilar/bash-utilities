@@ -9,7 +9,7 @@ class Event:
 
 def get_event_date(event):
     return event.date
-
+:>?""
 def current_users(events):
     events.sort(key=get_event_date)
     machines = {}
