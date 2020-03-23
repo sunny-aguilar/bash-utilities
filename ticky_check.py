@@ -111,10 +111,11 @@ def main():
     # for item in sorted_msg:
     #     sorted_m[item[0]] = item[1]
 
-    # print(sorted_m)
 
 
     print("User Usage Dictionary:")
+    print(user_count)
+    print()
     # save sorted dictionary in a new dict to keep sort
     sorted_user = sorted(user_count.items())
     #sorted_user.insert(0, ("Username", ["Username", "INFO", "ERROR"]))
