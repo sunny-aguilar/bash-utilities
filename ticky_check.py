@@ -2,8 +2,12 @@
 ####################################################################
 # Author:               Sandro Aguilar
 # Date:                 March 21, 2020
-# Class:                Coursera - final
-# Description:          Enter description here
+# Class:                Coursera - final project
+# Description:          Parses log files to to count the types of
+#                       errors encountered. It also maintains a
+#                       count of the users interacting with the
+#                       system and types of logs tracked for each
+#                       user.
 ####################################################################
 import re
 import operator
